@@ -1,0 +1,22 @@
+#photos{
+    width: 861px;
+    height: auto;
+    background: #42aaff;
+    color: #fff;
+    margin-top: 80px;
+}
+@media (max-width: 8000px) {
+    #photos{
+        margin-left: 30%;
+    }
+}
+@media (max-width: 1920px) {
+    #photos{
+        margin-left: 24.5%;
+    }
+}
+@media (max-width: 1300px) {
+    #photos{
+        margin-left: 300px;
+    }
+}

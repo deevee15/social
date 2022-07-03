@@ -1,0 +1,35 @@
+@media (max-width: 8000px) {
+    #messages{
+        margin-left: 30%;
+        margin-top: 80px;
+    }
+}
+@media (max-width: 1920px) {
+    #messages{
+        margin-left: 22%;
+        margin-top: 80px;
+    }
+}
+@media (max-width: 1300px) {
+    #messages{
+        margin-left: 230px;
+        margin-top: 30px;
+    }
+}
+#messages{
+    background: #fff;
+    width: 800px;
+    min-height: 300px;
+}
+.messages_select{
+    border: 1px solid #42aaff;
+    width: 300px;
+    min-height: 60px;
+    margin-top: -1px;
+}
+.messages_search{
+    background: #fff;
+    border: 1px solid #42aaff;
+    height: 30px;
+    width: 302px;
+}

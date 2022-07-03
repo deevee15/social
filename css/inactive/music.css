@@ -1,0 +1,84 @@
+#audio_player{
+    padding: 15px 15px 20px 15px;
+    border-bottom: 1px solid #000;
+}
+#audio_play{
+    background-image: url(/img/player.png);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #42aaff;
+    position: absolute;
+    cursor: pointer;
+}
+#audio_pause{
+    background-image: url(/img/player.png);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #42aaff;
+    background-position: 0px -56px;
+    cursor: pointer;
+    visibility: hidden;
+}
+#audio_previous{
+    background-image: url(/img/player.png);
+    height: 10px;
+    width: 12px;
+    background-position: 0 -88px;
+    position: ;
+    margin-left: 40px;
+    margin-top: -18px;
+    cursor: pointer;
+}
+#audio_next{
+    background-image: url(/img/player.png);
+    height: 10px;
+    width: 12px;
+    background-position: 0 -102px;
+    margin-left: 60px;
+    margin-top: -18px;
+    cursor: pointer;
+}
+.audio_stats_text{
+    position: ;
+    margin-left: 85px;
+    margin-top: -18px;
+}
+#audio_stats_time{
+    position: ;
+    margin-top: -18px;
+    margin-left: 305px;
+}
+#audio_stats_track{
+    width: 420px;
+    background: #82c4fb;
+    height: 2px;
+    margin-left: 85px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 5px;
+}
+#audio_stats_tslider{
+    width: 0px;
+    height: 2px;
+    background-color: #42aaff;
+}
+#audio_stats_volume{
+    width: 100px;
+    position: ;
+    background: #82c4fb;
+    height: 2px;
+    margin-left: 450px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#audio_stats_vslider{
+    width: 420px;
+    background: #42aaff;
+    height: 2px;
+    margin-left: 85px;
+    position: ;
+    cursor: pointer;
+    margin-top: 5px; 
+}

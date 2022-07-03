@@ -1,0 +1,159 @@
+.edit_list ul{
+    background: #42aaff;
+    width: 861px;
+    height: 30px;
+    line-height: 30px;
+}
+.edit_list ul li{
+    float: left;
+    margin-left: 20px;
+}
+.edit_list ul a{
+    color: #fff;
+}
+.edit_showww{
+    background: #42aaff;
+    width: 861px;
+    min-height: 100px;
+    margin-top: 20px;
+}
+.edit_show{
+    background: #42aaff;
+    width: 861px;
+    min-height: 100px;
+    position: absolute;
+    transition: 0.2s;
+}
+.edit_show.scs{margin-top: 70px;}
+form[name=edit_show_main],form[name=edit_show_edu],form[name=edit_show_extra],form[name=edit_show_testfcts_turn],form[name=edit_show_testfcts_bg]{
+    padding: 20px;
+}
+form[name=edit_show_main] input,form[name=edit_show_edu] input,form[name=edit_show_extra] input{
+    width: 200px;
+}
+form[name=edit_show_main] input[name=ageDay],form[name=edit_show_main] input[name=ageYear]{
+    width: 50px;
+}
+form[name=edit_show_main] input[type=text],form[name=edit_show_main] select,form[name=edit_show_edu] input[type=text],form[name=edit_show_extra] input[type=text]{
+    position: relative;
+    margin-left: 150px;
+    display: inherit;
+    margin-top: -18px;
+    border: 1px solid #008cff;
+    height: 20px;
+    padding-left: 5px;
+}
+form[name=edit_show_main] span,form[name=edit_show_edu] span,form[name=edit_show_extra] span,form[name=edit_show_testfcts_turn] span,form[name=edit_show_testfcts_bg] span{
+    color: #fff;
+}
+.ageDay,.ageYear{
+    width: 50px;
+}
+.edit_show_submit{
+    margin-left: 150px;
+    margin-top: -5px;
+    background: #1f98fb;
+    border: 1px solid #1f98fb;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    height: 30px;
+    width: 210px;
+    font-size: 14px;
+}
+.edit_show_submit:active{
+    padding-top: 1px;
+}
+.edit_show_submit:hover{
+    background: #1d8fed;
+    border: 1px solid #1d8fed;
+}
+.edit_menu_back{
+    position: absolute;
+    width: 80px;
+}
+.edit_menu_back_img{
+    width: 8px;
+    height: 20px;
+    padding: 5px;
+    background: url(/img/backk.png) no-repeat 5px;
+}
+.edit_menu_back_img span{
+    line-height: 22px;
+    padding-left: 20px;
+}
+.edit_menu_back:hover{
+    background: url(/img/backk.png) no-repeat 5px #2a9efc;
+}
+.edit_list_test{
+    text-shadow: #ff0000 0 0 5px;
+    color: #fff;
+}
+.checkbox_experim{
+    width: 18px;
+    height: 18px;
+    padding-left: 5px;
+    position: absolute;
+}
+.outtaHere{
+  display:none;
+  position:absolute;
+  left:-10000px;
+}
+label[for="upload"]{
+    margin-top: -5px;
+    margin-left: 10px;
+    position: absolute;
+	display: inline-block;
+	cursor: pointer;
+    padding: 5px;
+    line-height: 15px;
+    text-align: center;
+    width: 141px;
+    height: 16px;
+	background: #007eff;
+	color: #fff;
+}
+label[for="upload"]:active{
+    background: #82c4fb;
+}
+input[name=e_save]{
+    margin-top: -2px;
+    margin-left: 40px;
+    color: #fff;
+    background: #007eff;
+    border:1px solid #007eff;
+    padding: 3px;
+}
+input[name=e_save]:active{
+    padding-top: 4px;
+}
+.edit_success{
+    position: absolute;
+    width: 861px;
+    margin-top: 20px;
+}
+.edit_success_1{
+    height: 50px;
+    width: 821px;
+    background: #c2f5c2;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.edit_error_1{background: #ffcccb;}
+.edit_success_icon svg{
+    margin-top: 7.5px;
+    margin-left: 10px;
+    fill: #00aa00;
+}
+.edit_success_text{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 55px;
+    color: #00aa00;
+}
+.edit_success_text p:first-child{
+    font-weight: bold;
+    font-size: 18px;
+}
+.edit_success_text p:nth-child(2){font-size: 12px;}

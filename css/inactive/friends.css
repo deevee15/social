@@ -1,0 +1,196 @@
+@media (max-width: 8000px) {
+    .list_friends_profile{
+        margin-left: 35%;
+    }
+    .friends_menu{
+        margin-left: 60%;
+        margin-top: 0px;
+    }
+    .list_friends_section{margin-top: 150px;}
+    .list_friends_section,.list_friends_input{
+        margin-left: 35%;
+    }
+}
+@media (max-width: 1920px) {
+    .list_friends_profile{
+        margin-left: 24.5%;
+    }
+    .friends_menu{
+        margin-left: 57.8%;
+    }
+    .list_friends_section{margin-top: 80px;}
+    .list_friends_section,.list_friends_input{
+        margin-left: 24.5%;
+    }
+}
+@media (max-width: 1300px) {
+    .list_friends_profile{
+        margin-left: 24.5%;
+    }
+    .friends_menu{
+        margin-left: 80%;
+    }
+    .list_friends_section{margin-top: 80px;}
+    .list_friends_section,.list_friends_input{
+        margin-left: 24.5%;
+    }
+}
+.list_friends_input{
+    border: 1px solid #66b6f8;
+    width: 540px;
+}
+.list_friends_section ul li{
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.list_friends_section ul a{
+    color: #000;
+}
+.list_friends_section ul{
+    background: #fff;
+    width: 500px;
+    height: 20px;
+    padding: 10px 20px;
+    border: 1px solid #66b6f8;
+}
+.list_friends_search{
+    width: 540px;
+    height: 30px;
+    padding-left: 30px;
+    margin-top: -19px;
+    border: none;
+    background: url(/img/search_icon.png) no-repeat #fff;
+    padding-left: 28px;
+    border-left: 20px solid transparent;
+    background-position: 0;
+    color: #000;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+}
+.list_friends_profile{
+    width: 540px;
+    background: #fff;
+    margin-top: -1px;
+    border: 1px solid #66b6f8;
+    position: relative;
+    display:block;
+}
+.list_friends_profile_avatar_img{
+    border-radius: 60px;
+    width: 110px;
+    height: 110px;
+    margin: 12px 10px;
+}
+.list_friends_profile_contacts{
+    margin-left: 150px;
+    position: absolute;
+    margin-top:-110px;
+    font-size: 16px;
+    font-weight: Bold;
+}
+.list_friends_profile_contacts a{
+    color: #42aaff;
+}
+.list_friends_profile_contacts a:hover{
+    text-decoration: underline;
+}
+.list_friends_profile_edu{
+    margin-left: 150px;
+    position: absolute;
+    margin-top:-79px;
+}
+.list_friends_profile_write{
+    margin-left: 150px;
+    position: absolute;
+    margin-top:-30px;
+}
+.list_friends_profile_write a{
+    color: #42aaff;
+}
+.list_friends_profile_write a:hover{
+    text-decoration: underline;
+}
+.list_friends_profile_sct a{
+    margin-left: 150px;
+    position: absolute;
+    margin-top:-56px;
+    height: 25px;
+}
+.list_friends_profile_sct a div{
+    background:#42aaff;
+    color:#fff;
+    padding: 2px;
+    height: 18px;
+}
+.list_friends_profile_sct a div span{
+    font-size: 14px;
+    line-height: 18px;
+}
+.friends_menu{
+    position: absolute;
+    width: 218px;
+    height: 230px;
+    background: #fff;
+}
+.friends_menu_upage{
+    height: 50px;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+.friends_menu_upage_avatar_st{
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+.friends_menu_upage_names{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 70px;
+    margin-right: 5px;
+    color: #42aaff;
+}
+.friends_menu_upage_title{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 70px;
+    font-size: 12px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    width: 130px;
+    border-bottom: 1px solid #afafaf;
+    color: #afafaf;
+}
+a .friends_menu_friends:hover,a .friends_menu_subs:hover,a .friends_menu_flists:hover,a .friends_menu_findf:hover{
+    background: #e7e8ec;
+}
+a .friends_menu_upage:hover{
+    background: #e7e8ec;
+}
+.friends_menu_friends,.friends_menu_subs,.friends_menu_flists,.friends_menu_findf{
+    height: 25px;
+    line-height: 25px;
+    padding: 5px;
+    background: #fff;
+    color: #42aaff;
+    text-align: center;
+}
+.friends_menu_flists{cursor: pointer;}
+.list_followers_add{
+    margin-top: -83px;
+    margin-left: 150px;
+    position: absolute;
+}
+.list_followers_add a button{
+    color: #fff;
+    background: #42aaff;
+    height: 25px;
+    width: 150px;
+    border: 1px solid #42aaff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.list_followers_add a button:active{
+    padding-top: 1px;
+}

@@ -1,0 +1,132 @@
+#f_list {
+    height: 90px;
+    background: #fff;
+    position: absolute;
+    margin-top: -370px;
+}
+.f_list_stripe{
+    width: 1020px;
+    height: 45px;
+    background: #F4F5F8;
+    margin-left: 25px;
+    margin-top: 22.5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.f_list_stripe ul li{
+    float: left;
+    margin-right: 25px;
+    font-size: 18px;
+    color: #9DA9B9;
+    line-height: 45px;
+    cursor: pointer;
+}
+.f_list_stripe ul li:first-child{margin-left: 10px;}
+.f_list_stripe ul li:hover{border-bottom: 2px solid #9DA9B9;}
+.f_list_stripe ul li.clicked{
+    border-bottom: 2px solid #42aaff;
+    color: #42aaff;
+}
+.f_list_stripe_backb svg{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.f_list_stripe_backb span{margin-left: 54px;}
+#f_show{
+    min-height: 100px;
+    background: #fff;
+    position: absolute;
+    margin-top: -255px;
+}
+.f_show_allfr{height: 90px;}
+.f_show_allfr:last-child{margin-bottom: 10px;}
+.f_show_allfr_avatar{margin: 25px 0 0 25px;}
+.f_show_allfr_avatar img{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}
+.f_show_allfr_name,.f_show_allfr_edu{
+    margin-left: 125px; 
+    font-weight: 600;
+    color: #26282B;
+}
+.f_show_allfr_name{
+    position: absolute;
+    margin-top: -80px;
+    font-size: 20px;
+}
+.f_show_allfr_name a{color: #26282B;}
+.f_show_allfr_name a:hover{color: #42aaff;}
+.f_show_allfr_edu{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 125px;
+    width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #9DA9B9;
+}
+.f_show_allfr_edu a{
+    color: #9DA9B9;
+    white-space: nowrap;
+}
+.f_show_allfr_edu a:hover{text-decoration: underline;}
+.f_show_allfr_online{
+    position: absolute;
+    margin-left: 420px;
+    color: #9DA9B9;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: -60px;
+    width: 315px;
+}
+.f_show_allfr_online p{text-align: center;}
+.f_show_allfr_buttons{
+    margin-left: 890px;
+    margin-top: -60px;
+    width: 160px;
+    height: 30px;
+}
+.f_show_allfr_buttons a{margin-right: 25px;}
+.f_show_allfr_buttons a svg{position: absolute;}
+.f_show_allfr_buttons a:nth-child(1) svg{margin-top: -2.5px;}
+.f_show_allfr_buttons a:nth-child(2) svg{
+    margin-left: 35px;
+    margin-top: -5px;
+}
+.f_show_allfr_buttons a:nth-child(3) svg{margin-left: 65px;margin-top: -7.5px;}
+.f_show_allfr_buttons a svg{fill:#9DA9B9;}
+.f_show_allfr_buttons a:hover svg{
+    fill:#42aaff;
+    cursor: pointer;
+}
+.f_show_allfr_buttons_delete{
+    width: 30px;
+    height: 30px;
+}
+.f_show_allfr_buttons_return svg{
+    margin-top: -7.5px;
+    margin-left: -3px;
+}
+.f_show_allfr_buttons_return span{
+    position: absolute;
+    margin-top: -2.5px;
+    margin-left: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #9DA9B9;
+    cursor: pointer;
+}
+.f_show_allfr_buttons_return:hover svg{fill:#42aaff;}
+.f_show_allfr_buttons_return:hover span,.f_show_allfr_buttons_return span:hover{color: #42aaff;}
+/*adaptiveness*/
+@media(min-width: 1024px) and (max-width:1900px){
+    .f_list_stripe{
+        width: 60vw;
+        margin-left: 2.5vw;
+    }
+
+
+}

@@ -1,0 +1,147 @@
+#settings{
+    margin-left: 220px;
+    margin-top: 0px;
+}
+.settings_title{
+    background: #f9fafa;
+    border-bottom: 1px solid #e7e8ec;
+    font-size: 18px;
+    color: #42aaff;
+    width: 700px;   
+    padding: 15px;
+    padding-left: 30px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.settings_content{
+    background: #fff;
+    margin-top: -2px;
+    padding-left: 30px;
+}
+.settings_content div a{
+    position: relative;
+    display: block;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e7e8ec;
+}
+.settings_content div a span{
+    color: #42aaff;
+    cursor: pointer;
+    margin-left: 200px;
+    text-align: center;
+}
+.settings_content div a span:hover{
+    text-decoration: underline;
+}
+#select_type{
+    margin-left: 1030px;
+    background: #fff;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding-bottom: 5px;padding-top: 5px;
+    margin-top: 80px;
+}
+#select_type ul li{
+    padding-left: 5px;
+    font-size: 18px;
+    height: 25px;
+}
+#select_type ul a{
+    color: #000;
+}
+.content_exp{
+    width: 700px;
+}
+.topup_balance{
+    width: 150px;
+    height: 25px;
+    background: #42aaff;
+    border: 1px solid #42aaff;
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 250px;
+}
+.topup_balance:hover{
+    background: #5bb5ff;
+    border: 1px solid #5bb5ff;
+}
+.topup_balance:active{
+    padding-top: 1px;
+    background: #30a0fc;
+    border: 1px solid #30a0fc;
+}
+.donate_form{
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    margin: 200px auto;
+}
+.donate_form input[type=text],.donate_form p,.donate_text{
+    margin-left: 50px;
+}
+.donate_close{
+    position: absolute;
+    margin-left: 475px;
+    margin-top: -82px;
+    background: url(/img/closeit.png);
+    width: 25px; height: 25px;
+}
+.donate_close:hover{
+    background: url(/img/closeit2.png);
+    width: 25px; height: 25px;
+}
+#modal_language{
+    position: absolute;
+    left:0;
+    top: 0;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+}
+.modal_lg_list{
+    width: 500px;
+    height: 300px;
+    background: #fff;
+    margin: 200px auto;
+}
+.modal_lg_list p{
+    color: #fff;
+    background: #42aaff;
+    font-weight: bold;
+    padding: 7px;
+    text-align: center;
+}
+.modal_lg_list ul{
+}
+.modal_lg_list ul li{
+    height: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.modal_lg_list ul a{
+    color: #000;
+}
+.modal_lg_list ul li:hover{
+    background: #e7e8ec;
+}
+.modal_lg_list ul li span{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.modal_lg_close{
+    position: absolute;
+    margin-left: 470px;
+    margin-top: -278px;
+    -webkit-transition: .5s;
+    background: url(/img/closeit2.png);
+    width: 25px; height: 25px;
+}
+.modal_lg_close:hover{
+    background: none;
+    background: url(/img/closeit.png);
+    width: 25px; height: 25px;
+}

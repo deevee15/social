@@ -1,0 +1,25 @@
+#help{
+    margin-left: 230px;
+    margin-top: 30px;
+}
+#help{
+    width: 1000px;
+    min-height: 700px;
+}
+.questions{
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+input[name=search_forquestion]{
+    width: 1000px;
+    height: 30px;
+    padding-left: 30px;
+    border: 1px solid #1f98fb;
+    color: #fff;
+    background: url(/img/search_icon1.png) no-repeat #007eff;
+    background-position: 8px;
+}
+input[name=search_forquestion]::-webkit-input-placeholder{
+    color: #fff;
+}

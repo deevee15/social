@@ -1,0 +1,28 @@
+.lock {
+    /* убираем скроллбары с основнового содержимого страницы */
+    overflow: hidden;
+}
+.shim {
+    /* фиксируем, растягиваем на весь доступный экран */
+    position: fixed;
+    bottom: 0; left: 0; top: 0; right: 0;
+
+    /* если в модальном окне много содержимого, показываем скроллбар */
+    overflow: auto;
+
+    /* однопальцевый скролл для iPad*/
+    -webkit-overflow-scrolling: touch;
+}
+
+/* фикс для странностей в iPad */
+.shim > * {
+    -webkit-transform: translateZ(0px);
+}
+
+/* декоративная часть ширмы: делаем полупрозрачной и чёрной */
+.shim {
+    background: rgba(0,0,0,0.5);
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); /* IE6–IE8 */
+    zoom: 1;
+}

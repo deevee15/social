@@ -1,0 +1,28 @@
+#messages{
+    background: #fff;
+    width: 800px;
+    height: 1000px;
+    margin-left: 250px;
+    margin-top: 80px;
+}
+.messages_dialog_left{
+    height: 100px;
+    width: 310px;
+    padding-right: 15px;
+}
+.messages_dialog_avatar_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+.messages_dialog_names{
+    margin-left: 100px;
+    margin-top: -70px;
+    position: absolute;
+}
+.messages_dialog_lastmsg{
+    margin-left: 100px;
+    margin-top: -40px;
+    position: absolute;
+}

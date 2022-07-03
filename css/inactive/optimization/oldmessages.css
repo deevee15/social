@@ -1,0 +1,68 @@
+.messages_list ul{
+    background: #42aaff;
+    width: 861px;
+    height: 30px;
+    line-height: 30px;
+}
+.messages_list ul li{
+    float: left;
+    margin-left: 20px;
+}
+.messages_list ul a{
+    color: #fff;
+}
+.messages_menu_back_img{
+    width: 8px;
+    height: 20px;
+    padding: 5px;
+    background: url(/img/backk.png) no-repeat 5px;
+}
+.messages_menu_back_img span{
+    line-height: 22px;
+    padding-left: 20px;
+}
+.messages_menu_back:hover{
+    background: url(/img/backk.png) no-repeat 5px #2a9efc;
+}
+.messages_menu_back {
+    position: absolute;
+    width: 80px;
+}
+.messages_show{
+    width: 861px;
+    min-height: 100px;
+    margin-top: 20px;
+}
+.messages_show_user{
+    height: 80px;
+    background: #42aaff;
+    margin-bottom: 10px;
+}
+.messages_show_user_avatar{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.messages_show_user_name p{
+    position: absolute;
+    color: #fff;
+    margin-top: -40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+.messages_show_user_lastmsg p{
+    position: absolute;
+    overflow: hidden;
+    color: #fff;
+    margin-top: -60px;
+    width: 250px;
+    text-align: center;
+    margin-left: 250px;
+    max-height: 50px;
+}
+.messages_show_user_lastmsg p:first-line{line-height: 60px;}
+.bexpand_mestext{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -10px;
+}

@@ -1,0 +1,92 @@
+#s_list{
+    height: 90px;
+    background: #fff;
+    position: absolute;
+    margin-top: -370px;
+}
+.s_list_stripe{
+    width: 1020px;
+    height: 45px;
+    background: #F4F5F8;
+    margin-left: 25px;
+    margin-top: 22.5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.s_list_stripe ul li{
+    float: left;
+    margin-right: 25px;
+    font-size: 18px;
+    color: #9DA9B9;
+    line-height: 45px;
+    cursor: pointer;
+}
+.s_list_stripe ul li:first-child{margin-left: 10px;}
+.s_list_stripe ul li:hover{border-bottom: 2px solid #9DA9B9;}
+.s_list_stripe ul li.clicked{
+    border-bottom: 2px solid #42aaff;
+    color: #42aaff;
+}
+.s_list_stripe_backb svg{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.s_list_stripe_backb span{margin-left: 54px;}
+#settings{
+    background: #fff;
+    min-height: 400px;
+    position: absolute;
+    margin-top: -255px;
+}
+#settings div{margin: 25px 0 0 25px;}
+.settings_scr p{
+    font-weight: 600;
+    font-size: 22px;
+    color: #26282B;
+}
+#settings input, #settings select{
+    height: 45px;
+    background: #F4F5F8;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Poppins', 'Montserrat';
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    color: #9DA9B9;
+    font-weight: 400;
+}
+.settings_scr p{margin-bottom: 15px;}
+#settings input{width: 1020px;}
+#settings input:focus{color: #42aaff;}
+#settings input::placeholder{color: #9DA9B9;}
+.settings_scr_button{
+    width: 1020px;
+    background: #007eff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', 'Montserrat';
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.settings_status{
+    width: 1020px;
+    background: #F4F5F8;
+    color: #9DA9B9;
+    text-align: center;
+    height: 60px;
+    border-radius: 10px;
+    line-height: 60px;
+}
+.settings_status.success{
+    background: #c2f5c2;
+    color: #00aa00 !important;
+}
+.settings_status.error{
+    background: #ffcccb;
+    color: red !important;
+}

@@ -1,0 +1,226 @@
+#edit{
+    margin-top: -130px;
+}
+@media (max-width: 8000px) {
+    #edit{
+        margin-left: 25%;
+    }
+    #select_type{
+        margin-left: 70%;
+    }
+    form[name=edit_form],.edit_experimental{
+        width: 600px;
+    }
+    .edit_u_bg,.edit_invisble{
+        width: 600px;
+    }
+    .edit_title{
+        width: 580px;
+    }
+}
+@media (max-width: 1990px) {
+    #edit{
+        margin-left: 10%;
+    }
+    #select_type{
+        margin-left: 70%;
+    }
+    form[name=edit_form],.edit_experimental{
+        width: 400px;
+        margin-left: 400px;
+    }
+    .edit_u_bg,.edit_invisble{
+        width: 400px;
+        margin-left: 400px;
+    }
+    .edit_title{
+        width: 380px;
+    }
+}
+@media (max-width: 1300px) {
+    #edit{
+        margin-left: 30px;
+    }
+    #select_type{
+        margin-left: 1030px;
+    }
+}
+select[name=gender]{
+    margin-left: 59px;
+}
+input,select{
+    border: 1px solid #d1d1d1;
+    border-radius: 1px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+input:hover,select:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+input:focus,select:focus{
+    border: 1px solid #82c4fb;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input[name=e_name]{
+    line-height: 10px;
+    margin-left:57px;
+    position: relative;
+}
+input[name=e_sname]{
+    line-height: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+input[name=e_edu]{
+    line-height: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+input[name=e_educ]{
+    line-height: 10px;
+    margin-left: 33px;
+    position: relative;
+}
+input[name=e_about]{
+    line-height: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+input[name=e_city]{
+    line-height: 10px;
+    margin-left:45px;
+    position: relative;
+}
+input[name=e_lang]{
+    line-height: 10px;
+    margin-left: 50px;
+    position: relative;
+}
+input[name=e_avatar]{
+    line-height: 10px;
+    margin-left: 95px;
+    position: relative;
+}
+form[name=edit_form],.edit_experimental{
+    position: relative;
+    background: #fff;
+    color: #42aaff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.edit_title{
+    background: #42aaff;
+    padding: 0 20px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: -10px;
+    line-height: 40px;
+    border-bottom: 1px solid #e7e8ec;
+    border-radius: 2px 2px 0 0;
+    font-size: 16px;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+input[name=e_save]{
+    margin-left: 96px;
+    color: #fff;
+    background: #42aaff;
+    border: 1px solid #42aaff;
+}
+input[name=e_save]:active{
+    background: #30a0fc;
+    border: 1px solid #30a0fc;
+    padding-top: 1px;
+}
+input[name=submit_file]{
+    color: #fff;
+    background: #42aaff;
+    border:1px solid #42aaff;
+}
+input[name=submit_file]:active{
+    background: #30a0fc;
+    border: 1px solid #30a0fc;
+    padding-top: 1px;
+}
+.ageDay{
+    width: 78px;
+    height: 30px;
+    margin-left: 33px;
+}
+.ageMonth{
+    width: 138px;
+    height: 30px;
+}
+.ageYear{
+    width: 75px;
+    height: 30px;
+}
+.e_birth{
+    position: relative;
+    margin-left: 131px;
+}
+.e_birth font{
+    margin-right: 20px;
+}
+#select_type{
+    background: #fff;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding-bottom: 5px;padding-top: 5px;
+    margin-top: 80px;
+}
+#select_type ul li{
+    padding-left: 5px;
+    font-size: 18px;
+    height: 25px;
+}
+#select_type ul li:hover{
+    background: #d1d1d1;
+}
+#select_type ul a{
+    color: #000;
+}
+.checkbox_experim{
+    width: 18px;
+    height: 18px;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+.outtaHere{
+  display:none;
+  position:absolute;
+  left:-10000px;
+}
+label[for="upload"] {
+    margin-top: 7px;
+    position: absolute;
+	display: inline-block;
+	cursor: pointer;
+    padding: 5px;
+    line-height: 15px;
+    text-align: center;
+    width: 141px;
+    height: 16px;
+	background: #42aaff;
+    border-radius: 2px;
+	color: #fff;
+}
+label[for="upload"]:active{
+    background: #82c4fb;
+}
+.edit_u_bg{height: 50px;}
+.edit_experimental{height: 150px;}
+.edit_u_bg,.edit_invisble{
+    position: relative;
+    margin-top: -2px;
+    background: #fff;
+    padding: 10px;
+    border-top: 1px solid #d1d1d1;
+}

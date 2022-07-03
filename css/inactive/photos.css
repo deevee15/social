@@ -1,0 +1,91 @@
+#photos{
+    background: #fff;
+    width: 861px;
+    min-height: 750px;
+    margin-top: 80px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+@media (max-width: 8000px) {
+    #photos{
+        margin-left: 30%;
+    }
+}
+@media (max-width: 1920px) {
+    #photos{
+        margin-left: 24.5%;
+    }
+}
+@media (max-width: 1300px) {
+    #photos{
+        margin-left: 300px;
+    }
+}
+.photos_avatar p,.photos_other p{
+    background: #fff;
+    border-top: 1px solid #42aaff;
+    border-bottom: 1px solid #42aaff;
+    font-size: 25px;
+    padding: 5px;
+}
+.photos_avatar img{
+    height: 140px;
+    max-width: 140px;
+    margin: 10px 0px 10px 0px;
+}
+.outtaHere{
+  display:none;
+  position:absolute;
+  left:-10000px;
+}
+label[for="upload"]{
+    margin-top: 208px;
+}
+label[for="upload2"]{
+    margin-top: 8px;
+}
+label[for="upload"],label[for="upload2"] {
+    margin-left: 650px;
+    position: absolute;
+	display: inline-block;
+	cursor: pointer;
+    padding: 5px;
+    line-height: 15px;
+    text-align: center;
+    width: 141px;
+    height: 16px;
+	background: #42aaff;
+    border-radius: 2px;
+	color: #fff;
+}
+label[for="upload"]:active{
+    background: #82c4fb;
+}
+.photos_other img{
+    margin-top: 10px;
+    margin-left: 4px;
+}
+input[name=uploadfile]{
+    width: 200px;
+    height: 30px;
+}
+.back_to_profile{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 600px;
+}
+.back_to_profile button{
+    width: 250px;
+    height: 25px;
+    background: #42aaff;
+    border: 1px solid #42aaff;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.back_to_profile button:active{
+    padding-top: 1px;
+}
+.upload_photo_submit:active{
+    background: #82c4fb;
+}
