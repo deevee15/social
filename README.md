@@ -8,5 +8,5 @@ It contains:
 - System of uploading and viewing photos (account/photos.php; for it uses directory in user/photos/*userid*)
 - Possibility to upload your own avatars (for it uses directory in user/avatars/*userid*)
 - Dark mode
-Some style-files rewrited via SCSS
+#Some style-files rewrited via SCSS
 Here used not new PHP 5.5+, MySQL. As much as possible used AJAX for in-page update.
