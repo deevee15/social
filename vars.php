@@ -13,18 +13,6 @@
             }
             $b_day=$row['b_day'];
             $b_month=$row['b_month'];
-            /*if($b_month=="January"){$b_month = "января";}
-            else if($b_month=="February"){$b_month = "февраля";}
-            else if($b_month=="March"){$b_month = "марта";}
-            else if($b_month=="April"){$b_month = "апреля";}
-            else if($b_month=="May"){$b_month = "мая";}
-            else if($b_month=="June"){$b_month = "июня";}
-            else if($b_month=="July"){$b_month = "июля";}
-            else if($b_month=="August"){$b_month = "августа";}
-            else if($b_month=="September"){$b_month = "сентября";}
-            else if($b_month=="October"){$b_month = "октября";}
-            else if($b_month=="November"){$b_month = "ноября";}
-            else if($b_month=="December"){$b_month = "декабря";}*/
             $b_year=$row['b_year'];
             $online=$row['online'];
             $llogin=$row['last_login'];
