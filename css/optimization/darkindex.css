@@ -1,0 +1,12 @@
+body, #right, input[name=auth_login],input[name=auth_password],#registration,#registration form input,#registration form select,.ul_lang_list{
+    color: #ECF0F3 !important;
+    background: #26282B !important;
+}
+.right_logo svg,.footer_ul_lang svg,.footer_nightmode svg{fill:#ECF0F3 !important;}
+.right_bsungup{background: #ECF0F3 !important;}
+.right_bslogin{border-color: #ECF0F3 !important;}
+#footer{background: #26282B;color: #ECF0F3 !important;}
+#footer ul a,.footer_copyright a{color: #ECF0F3 !important;}
+.left_logo svg{fill: #26282B !important;}
+.left_text{color: #26282B !important;}
+.ul_lang_list {box-shadow: 5px 5px 11px rgba(27, 28, 29, 0.7), -5px -5px 11px rgba(47, 49, 54, 0.8) !important;}

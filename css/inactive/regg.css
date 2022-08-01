@@ -1,0 +1,177 @@
+body{font-family: 'Play', sans-serif;}
+.header_account{
+    font-weight: normal;
+    font-family: Tahoma;
+    cursor: pointer;
+    height: 41px;
+    width: 110px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: -33px;
+}
+.header_account:hover{
+    background: #2a9efc;
+}
+.header_enter{
+    margin-right: 10px;
+}
+.settings{
+    border-radius: 1px;
+}
+/*#cube{
+    width: 100px;
+    height: 100px;
+    perspective: 500px;
+    margin-top: 100px;
+}
+#cube:hover .reg_cube{
+    transform: rotateY(180deg);
+}
+.reg_cube{
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.reg_cube2,.reg_cube3,.reg_cube4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.reg_cube2,.reg_cube3,.reg_cube4{
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+#reg_page{
+    width: 1280px;
+    height: 550px;
+    /*background: #000;*/
+}
+.reg_page_bg{
+    margin-top: 20px;
+    margin-left: 295px;
+    height: 550px;
+    background: #42aaff;
+    color: #fff;
+}
+.reg_page_title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.reg_page_form_form{
+    margin-bottom: 20px;
+    margin-left: 450px;
+}
+.reg_page_form input[type=text]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 40px;
+    padding-left: 30px;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+.reg_page_form input[type=text]:focus{
+    border: 2px solid #007eff;
+}
+.reg_label{
+    height: 20px;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: -470px;
+    position: absolute;
+    line-height: 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    display: inline;
+}
+.cool-input__input_filled + .reg_label,
+.reg_page_form input[type=text]:focus + .reg_label {
+    z-index: 3;
+    padding: 0px 10px;
+    margin-left: -480px;
+    background-color: #42aaff;
+    color: #007eff;
+    font-size: 0.8em;
+    margin-top: -10px;
+}
+.reg_next{
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+    background: url(/img/gradient.png);
+    border: 0;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reg_next div{
+    transform: scale(1, 1) !important; 
+}
+.reg_next:active{
+    transform: scale(1, -1);
+}
+.reg_page_inf{
+    position: absolute;
+    margin-left: 295px;
+    margin-top: 96px;
+    width: 430px;
+    height: 485px;
+}
+.reg_page_inf_logo{
+    margin-left: 150px;
+}
+.reg_page_inf_text{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+#reg_points{
+    background: #42aaff;
+    height: 30px;
+    width: 985px;
+    margin-top: 40px;
+    color: #fff;
+    margin-left: 295px;
+}
+#reg_points ul li{
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.reg_page_form_form select,.f_gender{
+    width: 500px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+    border-bottom: 2px solid #fff;
+    padding-left: 25px;
+}
+.reg_page_form_form select option,.f_gender option{
+    background: #007eff;
+}
+.reg_page_form_p3{
+    margin-left: -425px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+}

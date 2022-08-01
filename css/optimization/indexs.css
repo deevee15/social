@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mainstripe, #photo, #info, #newpost, #wall, #e_list, #e_edit, #p_list, #p_select, #p_show, #log_cover, #p_addshow, #f_list, #f_show, #m_list, #m_show, #s_list, #settings, #m_list {
+  width: 1070px;
+  margin-left: 360px;
+  border-radius: 10px;
+  font-family: "Poppins", "Montserrat";
+  box-shadow: 3px 3px 30px rgba(171, 185, 201, 0.5), 4px 4px 30px rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 1024px) and (max-width: 1900px) {
+  #photo, #mainstripe, #info, .info_sendmes, #newpost, #photos, #friends, #wall, #e_list, #e_edit, #p_list, #p_select, #p_show, #p_addshow, #f_list, #f_show, #m_list, #m_show, #settings, #s_list {
+    width: 65vw !important;
+  }
+  .photos_list_nophoto, .friends_list_nofriends, .wall_post_noposts, .wall_post_settings, .wall_post_stats, .wall_post_text, .friendspphotos_list_banneduser {
+    width: calc(100% - 30px) !important;
+  }
+  .f_list_stripe, .e_list_stripe, .p_list_stripe, .m_list_stripe {
+    width: 60vw !important;
+    margin-left: 2.5vw !important;
+  }
+}
+body {
+  background: #ECF0F3;
+  overflow-x: hidden;
+}
+
+#left {
+  background: url(/img/indexnew.png) 0% 0%/cover no-repeat fixed;
+  width: 60vw;
+  height: 95vh;
+}
+#left .left_logo svg {
+  fill: #fff;
+  width: 28.5vw;
+  height: 24vw;
+  margin-left: 15vw;
+}
+#left .left_text {
+  color: #fff;
+  font-size: 3.3vw;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#right {
+  width: 40vw;
+  height: 95vh;
+  background: #ECF0F3;
+  color: #26282B;
+  position: absolute;
+  top: 0;
+  margin-left: 60vw;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+#right .right_logo svg {
+  fill: #26282B;
+  width: 8.75vw;
+  height: 7.5vw;
+  margin-top: 7.4vh;
+}
+#right .right_text1 {
+  font-size: 3.75vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+#right .right_text2 {
+  font-size: 1.875vw;
+  margin-top: 8vh;
+}
+#right .right_bsungup {
+  margin-top: 2vh;
+  background: #26282B;
+  color: #9042ff;
+  transition: 0.2s;
+}
+#right .right_bsungup:hover {
+  background: #0EC645 !important;
+  color: #fff;
+}
+#right .right_bsungup, #right .right_bslogin {
+  width: 31.25vw;
+  height: 8vh;
+  border-radius: 2.6vw;
+  margin-left: 4.375vw;
+  font-size: 1.875vw;
+  font-weight: 700;
+  line-height: 8vh;
+  cursor: pointer;
+}
+#right .right_bslogin {
+  margin-top: 4vh;
+  border: 0.15625vw solid #26282B;
+  transition: 0.2s;
+}
+#right .right_bslogin:hover {
+  color: #9042ff !important;
+  border-color: #9042ff !important;
+}
+
+#login {
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+#login form {
+  text-align: center;
+  margin-top: 3vh;
+  height: 32vh;
+}
+#login form input[name=auth_login]::-moz-placeholder, #login form input[name=auth_password]::-moz-placeholder {
+  color: #d9d9d9;
+}
+#login form input[name=auth_login]:-ms-input-placeholder, #login form input[name=auth_password]:-ms-input-placeholder {
+  color: #d9d9d9;
+}
+#login form input[name=auth_login]::placeholder, #login form input[name=auth_password]::placeholder {
+  color: #d9d9d9;
+}
+#login form input[name=auth_login], #login form input[name=auth_password], #login form .auth_submit {
+  width: 42vw;
+  height: 10vh;
+  border-radius: 2.6vw;
+  border: 0.15625vw solid #9042ff;
+  font-size: 1.875vw;
+  font-weight: 700;
+}
+#login form input[name=auth_password], #login form .auth_submit {
+  margin-top: 4vh;
+}
+#login form input[name=auth_login], #login form input[name=auth_password] {
+  padding-left: 5vw;
+}
+#login form .auth_submit {
+  background: #9042ff;
+  color: #fff;
+}
+#login form .auth_submit:hover {
+  background: #9e00ff;
+  border: 0;
+}
+#login .login_logo {
+  text-align: center;
+  cursor: pointer;
+}
+#login .login_logo svg {
+  fill: #9042ff;
+  width: 15vw;
+  height: 25.7vh;
+}
+#login .login_text {
+  color: #9042ff;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2vw;
+}
+#login .login_choice_back {
+  color: #9042ff;
+}
+#login .login_choice_back svg {
+  fill: #9042ff;
+  width: 1vw;
+  height: 0.75vw;
+  transform: rotate(90deg);
+}
+#login .login_choice ul {
+  width: 42vw;
+  height: 5vh;
+  text-align: center;
+  margin-left: 29vw;
+  margin-top: 2vh;
+}
+#login .login_choice ul li {
+  text-align: center;
+  list-style: none;
+  float: left;
+  color: #9042ff;
+  width: 21vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+#login .login_choice ul li:hover {
+  text-decoration: underline;
+}
+#login .login_info.success {
+  width: 42vw;
+  height: 7vh;
+  margin: 0 auto;
+  border-radius: 0.75vw;
+  background: #c2f5c2;
+  color: #00aa00;
+}
+#login .login_info.error {
+  width: 42vw;
+  height: 7vh;
+  margin: 0 auto;
+  border-radius: 0.75vw;
+  background: #ffcccb;
+  color: red;
+  text-align: center;
+  line-height: 7vh;
+}
+
+#registration {
+  width: 40vw;
+  height: 95vh;
+  background: #ECF0F3;
+  position: absolute;
+  margin-top: -95vh;
+  left: 120vw;
+  transition: 0.3s ease-out;
+  font-family: "Poppins", sans-serif;
+  color: #26282B;
+}
+#registration.showed {
+  left: 60vw;
+}
+#registration .registration_title {
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 5vh;
+  font-weight: 700;
+  color: #9042ff;
+}
+#registration form {
+  width: 31.25vw;
+  margin: 10vh auto;
+  font-family: "Poppins", sans-serif;
+}
+#registration form input::-moz-placeholder {
+  color: #d9d9d9;
+}
+#registration form input:-ms-input-placeholder {
+  color: #d9d9d9;
+}
+#registration form input::placeholder {
+  color: #d9d9d9;
+}
+#registration form input.filled {
+  border-color: #9042ff;
+}
+#registration form input[type=text]:focus, #registration form input[type=password]:focus {
+  border-color: #9042ff;
+}
+#registration form input, #registration form select {
+  margin-top: 2vh;
+  width: 31.25vw;
+  height: 6vh;
+  border-radius: 2.6vw;
+  border: 2px solid #d9d9d9;
+  background: #fff;
+  color: #9042ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25vw;
+  padding-left: 1.5625vw;
+  font-weight: 700;
+}
+#registration form input[name=reg_name], #registration form input[name=reg_surname] {
+  width: 14.625vw !important;
+}
+#registration form input[name=reg_surname] {
+  margin-left: 1.5vw;
+}
+#registration form input[type=button] {
+  background: #9042ff !important;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding-left: 0;
+}
+#registration form input[type=button]:hover {
+  background: #9e00ff !important;
+}
+#registration .registration_logo svg {
+  fill: #9042ff;
+  width: 8.75vw;
+  height: 7.5vw;
+  margin-left: 15.625vw;
+  margin-top: 5vh;
+  cursor: pointer;
+}
+#registration .registration_info {
+  width: 31.25vw;
+  min-height: 3vw;
+  background: #ffcccb;
+  color: red;
+  margin: 0 auto;
+  border-radius: 0.75vw;
+  text-align: center;
+  font-size: 0.85vw;
+  line-height: 3vw;
+}
+#registration .registration_info.success {
+  background: #c2f5c2;
+  color: #00aa00;
+}
+
+#footer {
+  background: #ECF0F3;
+  position: fixed;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #26282B;
+  font-size: 1.25vw;
+  top: 95vh;
+}
+#footer ul:first-child {
+  width: 60vw;
+  height: 5vh;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+#footer ul li {
+  list-style: none;
+  float: left;
+  padding-right: 3.4vw;
+  line-height: 5vh;
+  cursor: pointer;
+}
+#footer ul a {
+  color: #26282B;
+}
+#footer ul a:hover {
+  color: #b69bff !important;
+}
+#footer .footer_ul_lang svg {
+  width: 0.625vw;
+  height: 0.38vw;
+  fill: #26282B;
+  transition: 0.2s;
+}
+#footer .footer_ul_lang svg.slided {
+  transform: rotate(180deg);
+}
+#footer .footer_ul_lang span {
+  z-index: 1000;
+}
+#footer .footer_nightmode svg {
+  fill: #26282B;
+  line-height: 5vh;
+  width: 1vw;
+  height: 1vw;
+}
+#footer .footer_copyright {
+  position: absolute;
+  margin-top: -5vh;
+  line-height: 5vh;
+  width: 40vw;
+  margin-left: 60vw;
+  text-align: center;
+}
+#footer .footer_copyright a {
+  color: #26282B;
+  text-decoration: none;
+}
+#footer .footer_copyright a:hover {
+  text-decoration: underline;
+}
+#footer .ul_lang_list {
+  height: 14.932vh;
+  background: #ECF0F3;
+  width: 11.2vw;
+  transition: 0.2s;
+  justify-content: center;
+  border-top-left-radius: 0.75vw;
+  border-top-right-radius: 0.75vw;
+  box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5), 9px 9px 16px rgba(163, 177, 198, 0.5);
+}
+#footer .ul_lang_list li {
+  padding: 0 !important;
+  width: 11.2vw;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+}
+#footer .ul_lang_list li:first-child {
+  border-top-left-radius: 0.75vw;
+  border-top-right-radius: 0.75vw;
+}
+#footer .ul_lang_list li:hover {
+  background: #A0AEC4;
+}

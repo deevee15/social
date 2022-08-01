@@ -1,0 +1,138 @@
+@import 'default_settings.scss';
+#e_list{
+    height: 90px;
+    background: #fff;
+    position: absolute;
+    margin-top: -370px;
+    .e_list_stripe{
+        width: 1020px;
+        height: 45px;
+        background: #F4F5F8;
+        margin-left: 25px;
+        margin-top: 22.5px;
+        border-radius: 10px;
+        font-weight: 500;
+        ul {
+            li{
+                float: left;
+                margin-right: 25px;
+                font-size: 18px;
+                color: #9DA9B9;
+                line-height: 45px;
+                cursor: pointer;
+                &:first-child{margin-left: 10px;}
+                &:hover{border-bottom: 2px solid #9DA9B9;}
+                &.clicked{
+                    border-bottom: 2px solid $maincolor;
+                    color: $maincolor;
+                }
+            }
+        }
+        .e_list_stripe_backb {
+            svg{
+                position: absolute;
+                margin-left: 10px;
+                margin-top: 6px;
+            }
+            span{margin-left: 54px;}
+        }
+    }
+}
+#e_edit{
+    position: absolute;
+    margin-top: -255px;
+    min-height: 520px;
+    padding-bottom: 25px;
+    background: #fff;
+    &.edu{min-height: 255px;}
+    &.other{min-height: 185px;}
+    %setparams{
+        height: 45px;
+        background: #F4F5F8;
+        border-radius: 10px;
+        border: 0;
+        font-family: 'Poppins', 'Montserrat';
+        font-size: 16px;
+        margin-bottom: 25px;
+        padding-left: 20px;
+        color: #9DA9B9;
+        font-weight: 400;
+    }
+    form{
+        margin: 25px 0 0 25px;
+        p{
+            font-weight: 600;
+            font-size: 22px;
+            color: #26282B;  
+            margin-bottom: 15px;
+        }
+        input{
+            width: 1020px;
+            @extend %setparams;
+            &:focus{color: $maincolor;}
+            &::placeholder{color: #9DA9B9;}
+            &[name=edit_day]{width: 90px;}
+            &[name=edit_year]{
+                width: 210px;
+                margin-left: 20px;
+            }
+        }
+        select{
+            width: 670px;
+            margin-left: 20px;
+            @extend %setparams;
+        }
+        button{
+            width: 1020px;
+            background: $secondarycolor;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Poppins', 'Montserrat';
+            height: 40px;
+            border-radius: 10px;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+    .e_edit_status{
+        width: 1020px;
+        border-radius: 10px;
+        height: 60px;
+        background: #F4F5F8;
+        margin-top: 25px;
+        margin-left: 25px;
+        color: #9DA9B9;
+        p{
+            text-align: center;
+            line-height: 60px;
+        }
+        &.error{
+            background: #ffcccb;
+            color: red;
+        }
+        &.success{
+            background: #c2f5c2;
+            color: #00aa00;
+        }
+    }
+}
+/*adaptiveness*/
+@media(min-width: 1024px) and (max-width:1900px){
+    .e_list_stripe{
+        margin-left: 2.5vw;
+        width: 60vw;
+        ul li{font-size: 0.9375vw;}
+    }
+    #e_edit{
+        form{
+            input{
+                width: 60vw;
+                &[name=edit_day]{width: calc(10vw - 25px);}
+                &[name=edit_year]{width: calc(14vw - 25px);}
+            } 
+            button{width: 60vw;}
+            select{width: calc(37.5vw - 25px);}
+        }
+    } 
+}

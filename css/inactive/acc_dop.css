@@ -1,0 +1,10 @@
+.profile_inf{
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: 350px;
+}
+.profile_b_edit{
+    margin-top: 10px;
+    position: absolute;
+}

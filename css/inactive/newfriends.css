@@ -1,0 +1,172 @@
+/*@media (max-width: 8000px) {
+    #friends_menu,#friend_show{
+        margin-left: 30%;
+    }
+    .input_search{
+        margin-left: 30%;
+    }
+    .header_nmsg{
+        margin-left: 48%;
+    }
+    .header_nfrd{
+        margin-left: 50.5%;
+    }
+    .header_account,.header_enter{
+        margin-left: 65.3%;
+    }
+}
+@media (max-width: 1920px) {
+    #friends_menu,#friend_show{
+        margin-left: 24.5%;
+    }
+    .input_search{
+        margin-left: 24.4%;
+    }
+    .header_nmsg{
+        margin-left: 720px;
+    }
+    .header_nfrd{
+        margin-left: 780px;
+    }
+    .header_notif{
+        margin-left: 840px;
+    }
+    .header_account,.header_enter{
+        margin-left: 64%;
+    }
+}
+@media (max-width: 1300px) {
+    #friends_menu,#friend_show{
+        margin-left: 24.5%;
+    }
+    .header_account,.header_enter{
+        margin-left: 83%;
+    }
+}*/
+#friends_menu{
+    width: 861px;
+    background: #42aaff;
+    color: #fff;
+    /*position: absolute;
+    margin-top: 80px;*/
+    height: 30px;
+}
+#friends_menu ul li{
+    list-style: none;
+    float: left;
+    margin-left: 90px;
+    line-height: 30px;
+}
+#friends_menu ul a{
+    color: #fff;
+}
+#friend_show{
+    position: absolute;
+    margin-top: 20px;
+}
+.friend_show_points{
+    background: #42aaff;
+    margin-bottom: 10px;
+    width: 861px;
+    height: 80px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+/*.friend_show_points:hover{
+    transform: scale(1.05);
+}*/
+.friend_show_avatar{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.friend_show_names p{
+    position: absolute;
+    color: #fff;
+    margin-top: -50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+.friend_show_edu p{
+    position: absolute;
+    color: #fff;
+    margin-top: -25px;
+    font-size: 16px;
+    margin-left: 80px;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.friend_show_edu p a{color: #fff;}
+.friend_show_edu p a:hover{text-decoration: underline;}
+.friend_show_status p{
+    position: absolute;
+    color: #fff;
+    margin-top: -60px;
+    line-height: 60px;
+    width: 350px;
+    text-align: center;
+    margin-left: 290px;
+}
+.friend_show_group p{
+    position: absolute;
+    color: #fff;
+    margin-top: -60px;
+    line-height: 60px;
+    margin-left: 550px;
+}
+.friend_show_delete{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-left: 830px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+.follower_show_add{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    /*margin-left: 835px;*/
+    right: -20px;
+    margin-top: -35px;
+    cursor: pointer;
+}
+.friend_show_names p a:hover{
+    text-decoration: underline;
+}
+.friends_menu_back{
+    position: absolute;
+    width: 80px;
+}
+.friends_menu_back_img{
+    width: 8px;
+    height: 20px;
+    padding: 5px;
+    background: url(/img/backk.png) no-repeat 5px;
+}
+.friends_menu_back_img span{
+    line-height: 22px;
+    padding-left: 20px;
+}
+.friends_menu_back:hover{
+    background: url(/img/backk.png) no-repeat 5px #2a9efc;
+}
+.follower_show_add_button,.follower_show_add_button:before,.friend_show_delete_button,.friend_show_delete_button:before{
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: 0.2s;
+}
+.follower_show_add_button:before{
+    content: '';
+    transform: rotate(90deg);
+}
+.follower_show_add:hover .follower_show_add_button,.follower_show_add:hover .follower_show_add_button:before,.friend_show_delete:hover .friend_show_delete_button,.friend_show_delete:hover .friend_show_delete_button:before{background: #007eff;}
+.friend_show_delete_button{transform: rotate(-45deg);}
+.friend_show_delete_button:before{
+    transform: rotate(90deg);
+    content: '';
+}

@@ -1,0 +1,152 @@
+@import "default_settings.scss";
+#f_list {
+    height: 90px;
+    background: #fff;
+    position: absolute;
+    margin-top: -370px;
+    .f_list_stripe{
+        width: 1020px;
+        height: 45px;
+        background: #F4F5F8;
+        margin-left: 25px;
+        margin-top: 22.5px;
+        border-radius: 10px;
+        font-weight: 500;
+        ul {
+            li{
+                float: left;
+                margin-right: 25px;
+                font-size: 18px;
+                color: #9DA9B9;
+                line-height: 45px;
+                cursor: pointer;
+                &:first-child{margin-left: 10px;}
+                &:hover{border-bottom: 2px solid #9DA9B9;}
+                &.clicked{
+                    border-bottom: 2px solid $maincolor;
+                    color:$maincolor;
+                }
+            }
+        }
+        .f_list_stripe_backb{
+            svg{
+                position: absolute;
+                margin-left: 10px;
+                margin-top: 6px;
+            }
+            span{margin-left: 54px;}
+        }
+    }
+}
+#f_show{
+    min-height: 100px;
+    background: #fff;
+    position: absolute;
+    margin-top: -255px;
+    .f_show_allfr{
+        height: 90px;
+        &:last-child{margin-bottom: 10px;}
+        .f_show_allfr_avatar{
+            margin: 25px 0 0 25px;
+            img{
+                height: 80px;
+                width: 80px;
+                border-radius: 10px;
+            }
+        }
+        .f_show_allfr_name,.f_show_allfr_edu{
+            margin-left: 125px; 
+            font-weight: 600;
+            color: #26282B;
+        }
+        .f_show_allfr_name{
+            position: absolute;
+            margin-top: -80px;
+            font-size: 20px;
+            a{
+                color: #26282B;
+                &:hover{color: $maincolor;}
+            }
+        }
+        .f_show_allfr_edu{
+            position: absolute;
+            margin-top: -30px;
+            margin-left: 125px;
+            width: 320px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #9DA9B9;
+            a{
+                color: #9DA9B9;
+                white-space: nowrap;
+                &:hover{text-decoration: underline;}
+            }
+        }
+        .f_show_allfr_online{
+            position: absolute;
+            margin-left: 420px;
+            color: #9DA9B9;
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: -60px;
+            width: 315px;
+            p{text-align: center;}
+        }
+        .f_show_allfr_buttons{
+            margin-left: 890px;
+            margin-top: -60px;
+            width: 160px;
+            height: 30px;
+            a{
+                margin-right: 25px;
+                &:hover svg{
+                    fill:$maincolor;
+                    cursor: pointer;
+                }
+                svg{
+                    position: absolute;
+                    fill:#9DA9B9;
+                }
+                &:nth-child(1) svg{margin-top: -2.5px;}
+                &:nth-child(2) svg{
+                    margin-left: 35px;
+                    margin-top: -5px;
+                }
+                &:nth-child(3) svg{margin-left: 65px;margin-top: -7.5px;}
+            }
+            .f_show_allfr_buttons_delete{
+                width: 30px;
+                height: 30px;
+            }
+            .f_show_allfr_buttons_return{
+                &:hover{
+                    svg{fill:$maincolor;}
+                    span{color: $maincolor;}
+                }
+                svg{
+                    margin-top: -7.5px;
+                    margin-left: -3px;
+                }
+                span{
+                    position: absolute;
+                    margin-top: -2.5px;
+                    margin-left: 35px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #9DA9B9;
+                    cursor: pointer;
+                    &:hover{color: $maincolor;}
+                }
+            }
+        }
+    }
+}
+/*adaptiveness*/
+@media(min-width: 1024px) and (max-width:1900px){
+    #f_list {
+        .f_list_stripe{
+            width: 60vw;
+            margin-left: 2.5vw;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$maincolor: #9042ff;
+$secondarycolor: #9e00ff;
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+#mainstripe,#photo,#info,#newpost,#wall,#e_list,#e_edit,#p_list,#p_select,#p_show,#log_cover,#p_addshow,#f_list,#f_show,#m_list,#m_show,#s_list,#settings,#m_list{
+    width: 1070px;
+    margin-left: 360px;
+    border-radius: 10px;
+    font-family: 'Poppins', 'Montserrat';
+    box-shadow: 3px 3px 30px rgba(171, 185, 201, 0.5), 4px 4px 30px rgba(255, 255, 255, 0.5);
+}
+
+@media(min-width: 1024px) and (max-width:1900px){
+    #photo,#mainstripe,#info,.info_sendmes,#newpost,#photos,#friends,#wall,#e_list,#e_edit,#p_list,#p_select,#p_show,#p_addshow,#f_list,#f_show,#m_list,#m_show,#settings,#s_list{width: 65vw !important;}
+    .photos_list_nophoto, .friends_list_nofriends,.wall_post_noposts,.wall_post_settings,.wall_post_stats,.wall_post_text,.friendspphotos_list_banneduser{width: calc(100% - 30px) !important;}
+    .f_list_stripe,.e_list_stripe,.p_list_stripe,.m_list_stripe{
+        width: 60vw !important;
+        margin-left: 2.5vw !important;
+    }
+}    

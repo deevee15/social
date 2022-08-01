@@ -1,0 +1,179 @@
+@import  "default_settings.scss";
+#p_list{
+    height: 90px;
+    background: #fff;
+    position: absolute;
+    margin-top: -370px;
+    .p_list_stripe{
+        width: 1020px;
+        height: 45px;
+        background: #F4F5F8;
+        margin-left: 25px;
+        margin-top: 22.5px;
+        border-radius: 10px;
+        font-weight: 500;
+        ul{ 
+            li{
+                float: left;
+                margin-right: 25px;
+                font-size: 18px;
+                color: #9DA9B9;
+                line-height: 45px;
+                cursor: pointer;
+                &:first-child{margin-left: 10px;}
+                &:hover{border-bottom: 2px solid #9DA9B9;}
+                &.clicked{
+                    border-bottom: 2px solid $maincolor;
+                    color: $maincolor;
+                }
+            }
+        }
+        .p_list_stripe_backb{
+            svg{
+                position: absolute;
+                margin-left: 10px;
+                margin-top: 6px;
+            }
+            span{margin-left: 54px;}
+        }
+    }
+}
+#p_show{
+    background: #fff;
+    margin-top: -255px;
+    height: 805px;
+    .p_show_photo{
+        position: absolute;
+        margin-left: 30px;
+        margin-top: 30px;
+        width: 1010px;
+        height: 690px;
+        background: #000;
+        img{
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .p_show_buttons{
+        border-radius: 10px;
+        position: absolute;
+        margin-left: 30px;
+        margin-top: 745px;
+        width: 1010px;
+        height: 35px;
+        background: #F4F5F8;
+        color: #9DA9B9;
+        ul{
+            li{
+                float: left;
+                margin-right: 40px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                line-height: 35px;
+                &:first-child{margin-left: 20px;}
+                &:hover{text-decoration: underline;}
+                svg{
+                    position: absolute;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .p_show_buttons_closeb{margin-left: 5px;}
+    }
+}
+#p_select{
+    background: #fff;
+    min-height: 280px;
+    margin-top: -255px;
+    &.pshw{margin-top: 25px;}
+    &.notowner{min-height: 230px;}
+    .p_select_newphoto{
+        padding-top: 25px;
+        form{
+            width: 400px;
+            margin: 0 auto;
+            label[for="upload"], label[for="upload2"] {
+                position: absolute;
+                display: inline-block;
+                cursor: pointer;
+                text-align: center;
+                width: 310px;
+                height: 45px;
+                background: $secondarycolor;
+                color: #fff;
+                border-radius: 10px;
+                font-size: 24px;
+                line-height: 45px;
+            }
+            input[name=uploadfile] {
+                width: 200px;
+                height: 30px;
+            }
+            .outtaHere {
+                display: none;
+                position: absolute;
+                left: -10000px;
+            }
+            .upload_photo_submit{
+                width: 70px;
+                height: 45px;
+                background: $secondarycolor;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 24px;
+                border: 0;
+                margin-left: 330px;
+                cursor: pointer;
+            }
+        }
+    }
+    .p_select_photolist{
+        width: 100%;
+        padding-top: 30px;
+        margin-left: 30px;
+        img{
+            cursor: pointer;
+            width: 175px;
+            height: 175px;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .p_select_photolist_nophoto,.p_select_photolist_noava{
+            width: 1010px;
+            height: 40px;
+            background: #F4F5F8;
+            color: #9DA9B9;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 10px;
+        } 
+    }
+}
+#p_addshow{
+    margin-top: -255px;
+    background: #fff;
+    height: 490px;
+}
+/*adaptiveness*/
+@media(min-width: 1024px) and (max-width:1900px){
+    #p_show{
+        height: 90vh;
+        .p_show_photo{height: 75vh;}
+        .p_show_buttons{margin-top: calc(75vh + 60px);}
+        .p_show_photo,.p_show_buttons{width: calc(65vw - 60px);}
+    }
+    .p_list_stripe{
+        margin-left: 2.5vw;
+        width: 60vw;
+    }
+    #p_select{
+        .p_select_photolist{
+            .p_select_photolist_nophoto,.p_select_photolist_noava{width: calc(100% - 60px);}
+        }
+    }
+}

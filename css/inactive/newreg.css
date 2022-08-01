@@ -1,0 +1,183 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+}
+@media(max-width: 2560px){
+    #objects{
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+    .input_search{
+        margin-left: 680px;
+    }
+    .header_enter{
+        margin-left: 75.9%;
+    }
+}
+@media(max-width: 1920px){
+    #objects{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .input_search{
+        margin-left: 525px;
+    }
+    form[name=form_singup]{
+        margin-left: 300px;
+    }
+    .header_enter{
+        margin-left: 66.8%;
+    }
+    .header_lg{
+        margin-left: 130px;
+    }
+}
+@media(max-width: 1500px){
+    #objects{
+        margin-left: 70px;
+        margin-right: 50px;
+    }
+    .input_search{
+        margin-left: 380px;
+    }
+    form[name=form_singup]{
+        margin-left: 300px;
+    }
+}
+@media(max-width: 1300px){
+    #objects{
+        margin: 0px;
+    }
+    .input_search{
+        margin-left: 300px;
+    }
+    form[name=form_singup]{
+        margin-left: 300px;
+    }
+    .header_enter{
+        margin-left: 1050px;
+    }
+    .header_lg{
+        margin-left: 100px;
+    }
+}
+.preview{
+    width: 880px;
+    height: 312px;
+}
+.preview_title{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.preview_user{
+    margin-left: 300px;
+}
+.preview_user_name{
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    padding:  5px 0px;
+}
+.preview_user_name a{
+    color: #42aaff;
+}
+.preview_user_name a:hover{
+    text-decoration: underline;
+}
+.preview_user_avatar img{
+    border-radius: 100px;
+}
+.preview_user_info{
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    padding:  12px 0px;
+}
+.button_left{
+    width: 76px;
+    height: 76px;
+    background: url(/img/arrow_left.png);
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -280px;
+    cursor: pointer;
+}
+.button_right{
+    width: 76px;
+    height: 76px;
+    background: url(/img/arrow_right.png);
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+form[name=form_singup]{
+    margin-top: 80px;
+    background: #fff;
+    padding: 10px 0px;
+    width: 861px;
+}
+form[name=form_singup] input[type=text],form[name=form_singup] input[type=password],form[name=form_singup] select{
+    margin-left: 15px;
+}
+form[name=form_singup] input[type=text],form[name=form_singup] input[type=password],form[name=form_singup] select{padding-left: 5px;height: 28px; border-bottom:1px solid #d1d1d1;border-top: 1px solid #fff;border-right: 1px solid #fff;border-left: 1px solid #fff;}
+form[name=form_singup] select{color: gray;}
+form[name=form_singup] input[type=text],form[name=form_singup] input[type=password]{color: #42aaff;}
+input[name=auth_name],input[name=auth_sname]{
+    width: 150px;
+}
+input[name=auth_mail],input[name=auth_pass],input[name=auth_city],input[name=auth_repass]{
+    width: 320px;
+}
+select[name=ageMonth]{
+    width: 135px;
+}
+input[name=auth_b_day]{
+    width: 60px;
+}
+input[name=auth_b_year]{
+    width: 90px;
+}
+form[name=form_singup] p{
+    font-family: Open Sans;
+    font-size: 14px;
+}
+form[name=form_singup] input[type=submit]{
+    margin-left: 110px;
+    margin-top: 10px;
+}
+.auth_button{
+    width: 120px;
+    height: 25px;
+    background: #42aaff;
+    border: 1px solid #42aaff;
+    color: #fff;
+    border-radius: 1px;
+}
+input[name=auth_button]:active{
+    padding-top: 1px;
+}
+form[name=form_singup] input[type=text]:hover{
+    padding-left: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid #d1d1d1;
+}
+form[name=form_singup] input[type=text]:focus{
+    padding-left: 6px;
+    border: 1px solid #42aaff;
+}
+form[name=form_singup] input[type=password]:hover{
+    padding-left: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid #d1d1d1;
+}
+form[name=form_singup] input[type=password]:focus{
+    padding-left: 6px;
+    border: 1px solid #42aaff;
+}
+.footer{
+    font-size: 10px;
+    margin-top: 230px;
+    text-align: center;
+    color: #fff;
+}

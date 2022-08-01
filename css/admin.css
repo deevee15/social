@@ -1,0 +1,408 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+body{
+	/*background: #4a192c;
+    background: #32bbff;*/
+    background: #82c4fb;
+}
+a{
+	text-decoration: none;
+}
+@font-face{
+    font-family: Still; 
+    src: url(fonts/still.ttf);
+}
+.dop_logo{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 60px;
+}
+.aheader_account{
+    font-weight: normal;
+    font-family: Tahoma;
+    cursor: pointer;
+    height: 41px;
+    width: 30px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: -33px;
+    margin-left: 1220px;
+    z-index: 100;
+    position: absolute;
+}
+.aheader_lg_img{
+    width: 54px;
+    height: 39px;
+    background: url(/img/main/logogoog.png) no-repeat;
+    padding-top: 1px;
+}
+#header_dlg_a{
+    color: #fff;
+	width: 70px;
+    height: 41px;
+	display: block;
+    position: none;
+	outline: none;
+    margin-left: 100px;
+    width: 110px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+#header_dlg_a:hover{
+    background: #2a9efc;
+}
+#header{
+    background: #42aaff;
+    width: 100%;
+    height: 41px;
+}
+.header_lg{
+    color: #fff;
+    margin-left: 100px;
+    position: absolute;
+    width: 190px;
+}
+.input_search{
+    background: url(/img/search_icon1.png) no-repeat #007eff;
+    border-left: 20px solid transparent;
+    background-position: 10px;
+    border: 1px solid #007eff;
+    border-radius: 14px;
+    padding-left: 30px;
+    height: 25px;
+    width: 220px;
+    margin-top: 7.5px;
+    margin-left: 550px;
+    color: #fff;
+}
+.input_search:focus{
+    background: #fff;
+    border: 1px solid #42aaff;
+    color: #000;
+}
+input[name=search_input]::-webkit-input-placeholder{
+	font-size: 13px;
+	font-family: Arial;
+    color: #fff;
+    line-height: 16px;
+    margin-left: 15px;
+    padding: 0 1px;
+    white-space: nowrap;
+    line-height: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.header_enter{
+    font-weight: normal;
+    font-family: Tahoma;
+    cursor: pointer;
+    height: 41px;
+    width: 110px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: -35px;
+    margin-left: 1100px;
+}
+.header_enter:hover{
+    background: #2a9efc;
+}
+.photo_user p{
+    margin-top: 10px;
+    margin-left: 3px;
+    position: absolute;
+}
+.photo_user img{
+    margin-left: 60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.settings{
+    z-index: 10;
+    position: absolute;
+    list-style: none;
+    margin-top: 1px;
+    margin-left: -50px;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #e7e8ec;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.settings li{
+    padding: 3px 3px 3px 3px;
+}
+.settings a li{
+    color: #000;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+}
+.settings li:hover{
+    padding: 3px 3px 3px 3px;
+    background: #42aaff;
+}
+#content{
+    background: #fff;
+    height: 850px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.content_about{
+    background: #f5f5f5;
+    color: #42aaff;
+    text-align: center;
+    font: 14px Tahoma Narrow;
+    width: 800px;
+    height: 45px;
+    margin-top: 1px;
+    position: absolute;
+    margin-left: 40px;
+}
+.content_auth{
+    position: absolute;
+    margin-top: 100px;
+}
+form[name=form_singin]{
+    margin-left: 250px;
+}
+form[name=form_singin] p{
+    color: #42aaff;
+    font-family: Still;
+    font-weight: Bold;
+    font-size: 25px;
+}
+form[name=form_singin] p a{
+    color: #42aaff;
+}
+form[name=form_singin] p a:hover{
+    text-decoration: underline;
+}
+input[name=auth_login],input[name=auth_password]{
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid #42aaff;
+    padding-left: 5px;
+    color: #42aaff;
+    font-family: Tahoma;
+}
+input[name=auth_submit]{
+    margin-top: 10px;
+    color: #fff;
+    width: 400px;
+    height: 30px;
+    background: #42aaff;
+    border: 1px solid #42aaff;
+}
+input[name=auth_submit]:active{
+    border: 2px solid #32bbff;
+}
+.content_footer{
+    position: absolute;
+    margin-top: 820px;
+    text-align: center;
+    width: 900px;
+    font: 8px Tahoma;
+}
+.content_inf{
+    margin-top: 400px;
+    margin-left: 25px;
+    width: 900px;   
+    color: #afafaf;
+    position: absolute;
+}
+.content_inf ul li{
+    list-style: square;
+}
+.button_reg{
+    margin-top: 10px;
+    color: #fff;
+    width: 400px;
+    height: 30px;
+    background: #c10020;
+    border: 1px solid #c10020;
+}
+.button_reg:active{
+    border: 2px solid #9b2d30;
+}
+.ad_reg{
+    margin-left: 250px;
+}
+.points{
+    margin-left: 200px;
+}
+.header_admins{
+    font-size: 14px;
+    overflow: hidden;
+    color: #fff;
+    height: 42px;
+    line-height: 42px;
+    position: absolute;
+    padding: 0 10px;
+    margin-top: -34px;
+    margin-left: 674px;
+}
+.header_admins a{
+    color: #fff;
+}
+.header_admins:hover{
+    background: #2a9efc;
+}
+.header_users{
+    font-size: 14px;
+    overflow: hidden;
+    color: #fff;
+    height: 42px;
+    line-height: 42px;
+    position: absolute;
+    padding: 0 10px;
+    margin-top: -34px;
+    margin-left: 800px;
+}
+.header_users a{
+    color: #fff;
+}
+.header_users:hover{
+    background: #2a9efc;
+}
+.header_banned{
+    font-size: 14px;
+    overflow: hidden;
+    color: #fff;
+    height: 42px;
+    line-height: 42px;
+    position: absolute;
+    padding: 0 10px;
+    margin-top: -34px;
+    margin-left: 914px;
+}
+.header_banned a{
+    color: #fff;
+}
+.header_banned:hover{
+    background: #2a9efc;
+}
+#menu{
+    background: #fff;
+    width: 250px;
+    margin-left: 135px;
+    height: 150px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border: 1px solid #e7e8ec;
+    position: absolute;
+}
+#menu ul li{
+    padding: 10px 0px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+#menu ul a li{
+    color: #000;
+}
+#menu ul a li:hover{
+    background: #e7e8ec;
+}
+#moves{
+    background: #fff;
+    width: 700px;
+    padding: 35px;
+    margin-left: 550px;
+    margin-top: 20px;
+}
+input[name=user_id],input[name=ban_user],input[name=ban_reason],input[name=ban_time],input[name=paper_title],input[name=paper_text],input[name=paper_screen],input[name=admin_id],input[name=admin_names],input[name=admin_lvl],input[name=user_adadm_id],input[name=user_adadm_lvl]{
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    width: 210px;
+    height: 25px;
+    font-family: 'PT Sans', sans-serif;
+    font-size:14px;
+    padding-left: 18px;
+}
+input[name=user_id]:hover,input[name=ban_user]:hover,input[name=ban_reason]:hover,input[name=ban_time]:hover,input[name=paper_title]:hover,input[name=paper_text]:hover,input[name=paper_screen]:hover,input[name=admin_id]:hover,input[name=admin_names]:hover,input[name=admin_lvl]:hover,input[name=user_adadm_id]:hover,input[name=user_adadm_lvl]:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+input[name=user_id]:focus,input[name=ban_user]:focus,input[name=ban_reason]:focus,input[name=ban_time]:focus,input[name=paper_title]:focus,input[name=paper_text]:focus,input[name=paper_screen]:focus,input[name=admin_id]:focus,input[name=admin_names]:focus,input[name=admin_lvl]:focus,input[name=user_adadm_id]:focus,input[name=user_adadm_lvl]:focus{
+    border: 1px solid #82c4fb;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.user_submit{
+    width: 120px;
+    height: 25px;
+    background: #42aaff;
+    border: 1px solid #42aaff;
+    color: #fff;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+.user_submit:hover{
+    background: #5bb5ff;
+    border: 1px solid #5bb5ff;
+}
+.user_submit:active{
+    padding-top: 1px;
+    background: #30a0fc;
+    border: 1px solid #30a0fc;
+}
+.reasons_list{
+    font-size: 14px;
+}
+.admin_profile,.info_profile{
+    margin-left: 100px;
+    width: 500px;
+    background: #fff;
+    border: 1px solid #42aaff;
+}
+.admin_profile_inicials,.info_profile_inicials{
+    background: #42aaff;
+    height: 25px;
+    line-height: 25px;
+}
+.admin_profile_inicials a,.info_profile_inicials a{
+    margin-left: 200px;
+    color: #fff;
+}
+.admin_profile_inicials a:hover,.info_profile_inicials a:hover{
+    text-decoration: underline;
+}
+.admin_profile_avatar img,.info_profile_avatar img{
+    max-height: 700px;
+    width: 500px;
+}
+.header_admin_info,.header_user_info{
+    margin-bottom: 5px;
+    background: #007be0;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+}
+.admin_profile_level{
+    text-align: center;
+}
+.stat_status{
+    background: #42aaff;
+    color: #fff;
+    height: 30px;
+    padding: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+.stat_ans{
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #42aaff;
+}
+#header_1{
+    width: 100%;
+    height: 41px;
+    background: #42aaff;
+    position: fixed;
+}
+#center{
+    width: 1185px;
+    margin: 0 auto;
+}

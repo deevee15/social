@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mainstripe, #photo, #info, #newpost, #wall, #e_list, #e_edit, #p_list, #p_select, #p_show, #log_cover, #p_addshow, #f_list, #f_show, #m_list, #m_show, #s_list, #settings, #m_list {
+  width: 1070px;
+  margin-left: 360px;
+  border-radius: 10px;
+  font-family: "Poppins", "Montserrat";
+  box-shadow: 3px 3px 30px rgba(171, 185, 201, 0.5), 4px 4px 30px rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 1024px) and (max-width: 1900px) {
+  #photo, #mainstripe, #info, .info_sendmes, #newpost, #photos, #friends, #wall, #e_list, #e_edit, #p_list, #p_select, #p_show, #p_addshow, #f_list, #f_show, #m_list, #m_show, #settings, #s_list {
+    width: 65vw !important;
+  }
+  .photos_list_nophoto, .friends_list_nofriends, .wall_post_noposts, .wall_post_settings, .wall_post_stats, .wall_post_text, .friendspphotos_list_banneduser {
+    width: calc(100% - 30px) !important;
+  }
+  .f_list_stripe, .e_list_stripe, .p_list_stripe, .m_list_stripe {
+    width: 60vw !important;
+    margin-left: 2.5vw !important;
+  }
+}
+#e_list {
+  height: 90px;
+  background: #fff;
+  position: absolute;
+  margin-top: -370px;
+}
+#e_list .e_list_stripe {
+  width: 1020px;
+  height: 45px;
+  background: #F4F5F8;
+  margin-left: 25px;
+  margin-top: 22.5px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+#e_list .e_list_stripe ul li {
+  float: left;
+  margin-right: 25px;
+  font-size: 18px;
+  color: #9DA9B9;
+  line-height: 45px;
+  cursor: pointer;
+}
+#e_list .e_list_stripe ul li:first-child {
+  margin-left: 10px;
+}
+#e_list .e_list_stripe ul li:hover {
+  border-bottom: 2px solid #9DA9B9;
+}
+#e_list .e_list_stripe ul li.clicked {
+  border-bottom: 2px solid #9042ff;
+  color: #9042ff;
+}
+#e_list .e_list_stripe .e_list_stripe_backb svg {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+#e_list .e_list_stripe .e_list_stripe_backb span {
+  margin-left: 54px;
+}
+
+#e_edit {
+  position: absolute;
+  margin-top: -255px;
+  min-height: 520px;
+  padding-bottom: 25px;
+  background: #fff;
+}
+#e_edit.edu {
+  min-height: 255px;
+}
+#e_edit.other {
+  min-height: 185px;
+}
+#e_edit form select, #e_edit form input {
+  height: 45px;
+  background: #F4F5F8;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Poppins", "Montserrat";
+  font-size: 16px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  color: #9DA9B9;
+  font-weight: 400;
+}
+#e_edit form {
+  margin: 25px 0 0 25px;
+}
+#e_edit form p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #26282B;
+  margin-bottom: 15px;
+}
+#e_edit form input {
+  width: 1020px;
+}
+#e_edit form input:focus {
+  color: #9042ff;
+}
+#e_edit form input::-moz-placeholder {
+  color: #9DA9B9;
+}
+#e_edit form input:-ms-input-placeholder {
+  color: #9DA9B9;
+}
+#e_edit form input::placeholder {
+  color: #9DA9B9;
+}
+#e_edit form input[name=edit_day] {
+  width: 90px;
+}
+#e_edit form input[name=edit_year] {
+  width: 210px;
+  margin-left: 20px;
+}
+#e_edit form select {
+  width: 670px;
+  margin-left: 20px;
+}
+#e_edit form button {
+  width: 1020px;
+  background: #9e00ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", "Montserrat";
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+#e_edit .e_edit_status {
+  width: 1020px;
+  border-radius: 10px;
+  height: 60px;
+  background: #F4F5F8;
+  margin-top: 25px;
+  margin-left: 25px;
+  color: #9DA9B9;
+}
+#e_edit .e_edit_status p {
+  text-align: center;
+  line-height: 60px;
+}
+#e_edit .e_edit_status.error {
+  background: #ffcccb;
+  color: red;
+}
+#e_edit .e_edit_status.success {
+  background: #c2f5c2;
+  color: #00aa00;
+}
+
+/*adaptiveness*/
+@media (min-width: 1024px) and (max-width: 1900px) {
+  .e_list_stripe {
+    margin-left: 2.5vw;
+    width: 60vw;
+  }
+  .e_list_stripe ul li {
+    font-size: 0.9375vw;
+  }
+  #e_edit form input {
+    width: 60vw;
+  }
+  #e_edit form input[name=edit_day] {
+    width: calc(10vw - 25px);
+  }
+  #e_edit form input[name=edit_year] {
+    width: calc(14vw - 25px);
+  }
+  #e_edit form button {
+    width: 60vw;
+  }
+  #e_edit form select {
+    width: calc(37.5vw - 25px);
+  }
+}

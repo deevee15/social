@@ -1,0 +1,65 @@
+body{
+    color: #ECF0F3;
+    background: #26282B;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    height: 3px;
+    background: #000;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #373737;
+    cursor: pointer;
+}
+#header_cover,#header,#header_1,#mainstripe,#photo,#info,#photos,#friends,#newpost,.newpost_input input,.newpost_input textarea,#menu,.info_sendmes_input textarea,#wall{background: #2f3136 !important;}
+.header_menu_search input,.header_menu_search input:focus{background-color: #26282B !important;}
+.header_menu_user_button svg{fill: #26282B !important;}
+.mainstripe_name p,.mainstripe_photos_name p,.photo_comments_comm_text,.photo_comments_comm_name,.photos_title_name, #menu ul li,.info_sendmes_title{color: #ECF0F3 !important;}
+#optim #friends .friends_list_fr .friends_list_fr_name a,.friends_list_fr_name{color: #ECF0F3;}
+.photo_info,.photo_show,.photo_comments, .photo_settings,.info_right,.header_menu_showed,.photos_list_nophoto,.friends_list_nofriends,.wall_post_stats,.wall_post_settings,.wall_post_noposts,.wall_post_text_edit_textarea,.friendspphotos_list_banneduser,.photo_banned_info_plate1,.photo_banned_info_plate2,.photo_banned_admin,.post_edit_form_all button:hover{background: #26282B !important;}
+#menu ul li.here{background: #373737 !important;}
+.header_menu_showed{box-shadow: 0 1px 3px #373737 !important;}
+.header_menu_showed_profile:hover,.header_menu_showed ul li:hover,.header_menu_showed_logoutb:hover{background: #2f3136 !important;}
+@keyframes show_posts{
+    0%{background: #2f3136 !important;}
+    50%{background: #292b30 !important;}
+    100%{background: #2f3136 !important;}
+}
+/****/
+#mainstripe,#photo,#info,#newpost,#wall,#e_list,#e_edit,#p_list,#p_select,#p_show,#log_cover,#p_addshow,#friends,#photos,#menu,#settings,#s_list,#m_list, #m_show,#f_list,#f_show{box-shadow: 3px 3px 30px #1B1C1D, 4px 4px 30px #2F3136 !important;}
+/*edit page*/
+#e_list,#e_edit{background: #2f3136 !important;}
+#e_edit form input, #e_edit form select,.e_list_stripe{background: #26282B !important;}
+#e_edit form p{color: #ECF0F3 !important;}
+/*photos page*/
+#p_list,#p_addshow,#p_show,#p_select{background: #2f3136 !important;}
+.p_list_stripe,.p_show_buttons,.p_show_photo,.p_select_photolist_nophoto,.p_select_photolist_noava{background: #26282B !important;}
+/*friends page*/
+#f_list, #f_show{background: #2f3136 !important;}
+.f_list_stripe{background: #26282B !important;}
+.f_show_allfr_name a{color: #fff !important;}
+.f_show_allfr_name a:hover{color: #9042ff !important;}
+/*settings page*/
+#settings,#s_list{background: #2f3136 !important;}
+#settings input,.s_list_stripe,.settings_status{background: #26282B !important;}
+.settings_gen,.settings_scr p{color: #ECF0F3 !important;}
+/*side panel message*/
+.send-panel{color:#fff !important;background: #2f3136 !important;}
+.send-panel textarea{background: #26282B !important;}
+/*messages page*/
+#m_list, #m_show{background: #2f3136 !important;}
+.m_list_stripe,.m_show_dialogue_nothing,.m_show_dialogue_send_input,.m_show_dialogue_info_search input[type=text]{background-color: #26282B !important;}
+.m_show_list_point_name,.m_show_dialogue_info_name,.m_show_dialogue_chat_right_name,.m_show_dialogue_chat_left_name{color: #fff !important;}
+.m_show_list,.m_show_dialogue_info{border-color: #26282B !important;}
+.m_show_list_point:hover{background: #26282B !important;}
+#m_show .m_show_dialogue .m_show_dialogue_chat::-webkit-scrollbar{
+    width: 10px;
+    height: 3px;
+    background: #26282B;
+    cursor: pointer;
+}
+#m_show .m_show_dialogue .m_show_dialogue_chat::-webkit-scrollbar-thumb{
+    background-color: #373737;
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+.profile_wall_show{
+    position: absolute;
+    margin-top: 555px;
+    margin-left: 350px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    width: 540px;
+}
+.wall_show{
+    border-bottom: 1px solid #d1d1d1;
+    padding: 5px 5px 5px 10px;
+    margin-top: -50px;
+    margin-left: 52px;
+}
+.wall_show_user a{
+    color: #42aaff;
+}
+.wall_show_user a:hover{
+    text-decoration: underline;
+}
+.wall_show_date{
+    font-size: 10px;
+    color: #d1d1d1;
+}
+.wall_buttons{
+    position: relative;
+    padding-bottom: 18px;
+    padding-top: 8px;
+    margin-left: 55px;
+}
+.wall_buttons li{
+    float: left;
+    padding-left: 5px;
+}
+.w_b_like,.w_b_comment,.w_b_repost{
+    color: #42aaff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.w_b_like:hover,.w_b_comment:hover,.w_b_repost:hover{
+    background: #eae5e5;
+}
+.w_b_like p,.w_b_comment p{
+    margin-left: 15px;
+}
+.w_b_like_img{
+    margin-top: 2px;
+    position: absolute;
+    background: url(/img/like.png);
+    width: 12px;
+    height: 10px;
+}
+.w_b_comment_img{
+    margin-top: 2px;
+    position: absolute;
+    background: url(/img/comment.png);
+    width: 12px;
+    height: 10px;
+}
+.w_b_repost_img{
+    margin-top: 2px;
+    position: absolute;
+    background: url(/img/repost.png);
+    width: 12px;
+    height: 10px;
+}
+.profile_friends{
+    margin-top: 365px;
+}

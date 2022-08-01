@@ -1,0 +1,1372 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mainstripe, #photo, #info, #newpost, #wall, #e_list, #e_edit, #p_list, #p_select, #p_show, #log_cover, #p_addshow, #f_list, #f_show, #m_list, #m_show, #s_list, #settings, #m_list {
+  width: 1070px;
+  margin-left: 360px;
+  border-radius: 10px;
+  font-family: "Poppins", "Montserrat";
+  box-shadow: 3px 3px 30px rgba(171, 185, 201, 0.5), 4px 4px 30px rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 1024px) and (max-width: 1900px) {
+  #photo, #mainstripe, #info, .info_sendmes, #newpost, #photos, #friends, #wall, #e_list, #e_edit, #p_list, #p_select, #p_show, #p_addshow, #f_list, #f_show, #m_list, #m_show, #settings, #s_list {
+    width: 65vw !important;
+  }
+  .photos_list_nophoto, .friends_list_nofriends, .wall_post_noposts, .wall_post_settings, .wall_post_stats, .wall_post_text, .friendspphotos_list_banneduser {
+    width: calc(100% - 30px) !important;
+  }
+  .f_list_stripe, .e_list_stripe, .p_list_stripe, .m_list_stripe {
+    width: 60vw !important;
+    margin-left: 2.5vw !important;
+  }
+}
+body {
+  background: #ECF0F3;
+  font-family: "Poppins", "Montserrat";
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 3px;
+  background: #fff;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #9042ff;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes gear_anim {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes gear_anim {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes question_anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes question_anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes theme_anim {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes theme_anim {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes show_posts {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #F8F8FF;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes show_posts {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #F8F8FF;
+  }
+  100% {
+    background: #fff;
+  }
+}
+li {
+  list-style: none;
+}
+
+#percent1 {
+  background: #9e00ff !important;
+}
+
+#percent_special {
+  background: linear-gradient(90deg, #9400D3 0%, #4B0082 100%) !important;
+}
+
+#optim {
+  width: 1840px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  /**********/
+}
+#optim #header {
+  background: #fff;
+  height: 80px;
+  position: relative;
+  width: 100%;
+  z-index: 3000;
+}
+#optim #header #header_1 {
+  height: 80px;
+  position: fixed;
+  width: 1840px;
+  background: #fff;
+  z-index: 100;
+}
+#optim #header svg {
+  fill: #9042ff;
+  height: 80px;
+}
+#optim #header .header_logo {
+  width: 80px;
+  height: 100%;
+}
+#optim #header .header_logo:hover .header_logo_link svg {
+  transition: 0.2s ease-in-out;
+  fill: #9e00ff !important;
+}
+#optim #header .header_menu {
+  width: 350px;
+  height: 80px;
+  margin-left: 1490px;
+  margin-top: -80px;
+  z-index: 100;
+}
+#optim #header .header_menu .header_menu_search {
+  position: absolute;
+}
+#optim #header .header_menu .header_menu_search input {
+  width: 245px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  background: url(/img/search.svg) no-repeat #F4F5F8;
+  background-position: 10px;
+  font-size: 16px;
+  padding-left: 40px;
+  font-weight: 400;
+}
+#optim #header .header_menu .header_menu_search input:focus {
+  color: #9042ff;
+  background: url(/img/search_clicked.svg) no-repeat #F4F5F8;
+  background-position: 10px;
+}
+#optim #header .header_menu .header_menu_search input::-moz-placeholder {
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  line-height: 40px;
+}
+#optim #header .header_menu .header_menu_search input:-ms-input-placeholder {
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  line-height: 40px;
+}
+#optim #header .header_menu .header_menu_search input::placeholder {
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  line-height: 40px;
+}
+#optim #header .header_menu .header_menu_user {
+  cursor: pointer;
+  z-index: 15;
+}
+#optim #header .header_menu .header_menu_user .header_menu_user_photo {
+  margin-top: 20px;
+  margin-left: 280px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_user_photo img {
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_user_button {
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 335px;
+  transition: 0.2s ease;
+}
+#optim #header .header_menu .header_menu_user .header_menu_user_button.clicked {
+  transform: rotate(180deg);
+}
+#optim #header .header_menu .header_menu_user .header_menu_user_button svg {
+  fill: #F4F5F8;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed_profile:hover, #optim #header .header_menu .header_menu_user .header_menu_showed ul li:hover, #optim #header .header_menu .header_menu_user .header_menu_showed_logoutb:hover {
+  background: #F4F5F8;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed {
+  background: #fff;
+  width: 365px;
+  margin-top: 20px;
+  box-shadow: 0 1px 3px #d1d1d1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: -2000px;
+  position: absolute;
+  transition: 0.15s linear;
+  z-index: 10;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed.showed {
+  top: 60px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_profile {
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_profile .header_menu_showed_profile_avatar {
+  margin-top: 10px;
+  margin-left: 20px;
+  position: absolute;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_profile .header_menu_showed_profile_avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_profile .header_menu_showed_profile_name, #optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_profile .header_menu_showed_profile_id {
+  margin-left: 90px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_profile .header_menu_showed_profile_name {
+  font-family: "Poppins", "Montserrat";
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  color: #49607E;
+  margin-top: 5px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_profile .header_menu_showed_profile_id {
+  position: absolute;
+  font-family: "Poppins", "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  color: #9DA9B9;
+  margin-top: 35px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed hr {
+  background: #E8EAF1;
+  height: 1px;
+  border: 0;
+  margin-left: 20px;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed ul li, #optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_logoutb {
+  cursor: pointer;
+  width: 315px;
+  padding: 20px 0 20px 50px;
+  height: 30px;
+  font-size: 20px;
+  font-family: "Poppins", "Montserrat";
+  font-weight: 500;
+  color: #9DA9B9;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_logoutb {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  height: 29px !important;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed .header_menu_showed_logoutb a {
+  color: #9DA9B9;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed ul li:first-child:hover svg {
+  -webkit-animation: gear_anim 1s linear 1;
+          animation: gear_anim 1s linear 1;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed ul li:nth-child(2):hover svg {
+  -webkit-animation: question_anim 1s linear 1;
+          animation: question_anim 1s linear 1;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed ul li:last-child:hover svg {
+  -webkit-animation: theme_anim 1s linear 1;
+          animation: theme_anim 1s linear 1;
+}
+#optim #header .header_menu .header_menu_user .header_menu_showed ul li svg {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -35px;
+  fill: #9DA9B9 !important;
+}
+#optim #menu {
+  background: #fff;
+  width: 300px;
+  height: 370px;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-family: "Poppins", "Montserrat";
+  box-shadow: 3px 3px 30px rgba(171, 185, 201, 0.5), 4px 4px 30px rgba(255, 255, 255, 0.5);
+}
+#optim #menu .menu_admin_point {
+  border-bottom: none !important;
+}
+#optim #menu ul li {
+  font-weight: 500;
+  font-size: 20px;
+  color: #49607E;
+  height: 60px;
+  line-height: 60px;
+  width: 200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #E8EAF1;
+  cursor: pointer;
+}
+#optim #menu ul li:hover {
+  color: #9042ff;
+  border-color: #9042ff;
+  transition: 0.2s;
+}
+#optim #menu ul li:hover svg {
+  fill: #9042ff;
+}
+#optim #menu ul li:hover span {
+  color: #9042ff;
+}
+#optim #menu ul li svg {
+  position: absolute;
+  margin-top: 15px;
+  fill: #ABB9C9;
+}
+#optim #menu ul li span {
+  margin-left: 50px;
+}
+#optim #menu ul li.here {
+  background: #F4F5F8;
+  color: #9042ff;
+  width: calc(100% - 33px);
+  border-left: 2px solid #9042ff;
+  border-top-right-radius: 10px;
+  padding-left: 30px;
+}
+#optim #menu ul li.here svg {
+  margin-left: 20px;
+  fill: #9042ff;
+}
+#optim #menu ul li.here span {
+  margin-left: 65px;
+}
+#optim #menu ul li .followers_count {
+  background: #9042ff;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 175px;
+  margin-top: -45px;
+}
+#optim #mainstripe {
+  height: 45px;
+  background: #fff;
+  position: absolute;
+  margin-top: -360px;
+  margin-left: 360px;
+}
+#optim #mainstripe .mainstripe_name p, #optim #mainstripe .mainstripe_photos_name p {
+  font-weight: 500;
+  font-size: 24px;
+  color: #26282B;
+  line-height: 45px;
+  margin-left: 25px;
+}
+#optim #mainstripe .mainstripe_photos_backb {
+  font-size: 20px;
+  color: #9DA9B9;
+  line-height: 40px;
+  margin-top: -40px;
+  margin-left: 825px;
+  cursor: pointer;
+}
+#optim #mainstripe .mainstripe_photos_backb:hover {
+  text-decoration: underline;
+}
+#optim #mainstripe .mainstripe_name p object, #optim #mainstripe .mainstripe_name p img {
+  margin-left: 10px;
+  margin-top: 12.5px;
+  fill: #9042ff !important;
+  width: 25px;
+  height: 25px;
+}
+#optim #mainstripe .mainstripe_name p object {
+  position: absolute;
+}
+#optim #mainstripe .mainstripe_online {
+  position: absolute;
+  right: 35px;
+  color: #9DA9B9;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -35px;
+}
+#optim #photo {
+  margin-top: -290px;
+  height: 490px;
+  background: #fff;
+}
+#optim #photo .photo_show {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 450px;
+  height: 450px;
+  background: #F4F5F8;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#optim #photo .photo_show img {
+  height: 100%;
+  width: auto;
+  min-width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#optim #photo .photo_show img.changed {
+  -webkit-animation: fade 2s linear 1;
+          animation: fade 2s linear 1;
+}
+#optim #photo .photo_info, #optim #photo .photo_comments, #optim #photo .photo_settings, #optim #photo .photo_banned_info_plate1, #optim #photo .photo_banned_info_plate2, #optim #photo .photo_banned_admin {
+  width: 556px;
+  background: #F4F5F8;
+  margin-left: 490px;
+  border-radius: 10px;
+  position: absolute;
+}
+#optim #photo .photo_info, #optim #photo .photo_banned_info_plate1, #optim #photo .photo_banned_info_plate2, #optim #photo .photo_banned_admin {
+  height: 35px;
+  margin-top: 20px;
+  color: #9DA9B9;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: "Poppins", "Montserrat";
+}
+#optim #photo .photo_banned_info_plate1, #optim #photo .photo_banned_info_plate2 {
+  width: 541px;
+}
+#optim #photo .photo_info ul a li, #optim #photo .photo_banned_admin ul li {
+  min-width: 100px;
+  padding-left: 15px;
+  float: left;
+}
+#optim #photo .photo_info ul a {
+  color: #9DA9B9;
+}
+#optim #photo .photo_info ul a:last-child li {
+  padding-left: 40px;
+}
+#optim #photo .photo_info ul a li svg {
+  margin-top: 10px;
+  fill: #9DA9B9;
+}
+#optim #photo .photo_info ul a li span {
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 30px;
+}
+#optim #photo .photo_info .photo_info_avatar_likes {
+  cursor: pointer;
+}
+#optim #photo .photo_info .photo_info_avatar_likes_count {
+  max-width: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#optim #photo .photo_comments {
+  height: 320px;
+  margin-top: 80px;
+  overflow-y: auto;
+  font-family: "Poppins", "Montserrat";
+}
+#optim #photo .photo_comments .photo_comments_comm {
+  width: 510px;
+  margin: 15px auto;
+}
+#optim #photo .photo_comments .photo_comments_comm_photo img {
+  border-radius: 10px;
+}
+#optim #photo .photo_comments .photo_comments_comm_name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #26282B;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 55px;
+}
+#optim #photo .photo_comments .photo_comments_comm_date {
+  color: #9DA9B9;
+  font-size: 12px;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 55px;
+}
+#optim #photo .photo_comments .photo_comments_comm_text {
+  margin-top: 10px;
+  color: #26282B;
+  font-size: 16px;
+}
+#optim #photo .photo_settings {
+  color: #9DA9B9;
+  height: 35px;
+  font-family: "Poppins", "Montserrat";
+  margin-top: 435px;
+}
+#optim #photo .photo_settings ul li {
+  float: left;
+  line-height: 35px;
+  padding-right: 20px;
+}
+#optim #photo .photo_settings ul li:first-child {
+  margin-left: 15px;
+}
+#optim #photo .photo_settings ul li a {
+  color: #9DA9B9;
+}
+#optim #photo .photo_settings ul li a:hover {
+  text-decoration: underline;
+}
+#optim #photo .photo_banned_info_plate1, #optim #photo .photo_banned_info_plate2 {
+  padding-left: 15px;
+}
+#optim #photo .photo_banned_info_plate2 {
+  margin-top: 75px;
+}
+#optim #photo .photo_banned_admin {
+  margin-top: 130px;
+  color: #ff0000;
+}
+#optim #info {
+  height: 250px;
+  background: #fff;
+  margin-top: 25px;
+}
+#optim #info .info_left {
+  position: absolute;
+  margin-top: 12px;
+}
+#optim #info .info_left #percent, #optim #info .info_left #percent1, #optim #info .info_left #percent2, #optim #info .info_left #percent3, #optim #info .info_left #percent_special, #optim #info .info_left .experience_line {
+  height: 50px !important;
+  border-radius: 10px !important;
+  font-family: Poppins !important;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 0 !important;
+}
+#optim #info .info_left .e_text {
+  font-size: 20px !important;
+}
+#optim #info .info_left .exp_text_st {
+  line-height: 50px !important;
+}
+#optim #info .info_left .experience_line {
+  width: 300px;
+}
+#optim #info .info_left .info_left_exp, #optim #info .info_left .info_left_editb button, #optim #info .info_left .info_edit_email_status, #optim #info .info_left .info_left_msg, #optim #info .info_left .info_left_friendstgs, #optim #info .info_left .info_left_addfr, #optim #info .info_left .info_left_hesub, #optim #info .info_left .info_left_usub {
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  font-family: "Poppins", "Montserrat";
+  margin-bottom: 25px;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+#optim #info .info_left .info_left_editb button {
+  background: #861ffb;
+  transition: 0.2s ease-in;
+  border: 0;
+  color: #fff;
+}
+#optim #info .info_left .info_left_editb button:hover {
+  background-color: #8f1ded;
+}
+#optim #info .info_left .info_left_editb button:active {
+  padding-top: 1px;
+}
+#optim #info .info_left .info_edit_email_status {
+  background: #CBE7FD;
+  color: #26282B;
+}
+#optim #info .info_left .info_left_msg, #optim #info .info_left .info_left_addfr {
+  background: #9e00ff;
+  color: #fff;
+}
+#optim #info .info_left .info_left_friendstgs, #optim #info .info_left .info_left_hesub, #optim #info .info_left .info_left_usub {
+  background: #CBE7FD;
+  color: #26282B;
+}
+#optim #info .info_right {
+  width: 655px;
+  height: 200px;
+  background: #F4F5F8;
+  border-radius: 10px;
+  margin-left: 390px;
+  margin-top: 25px;
+  position: absolute;
+  overflow-y: auto;
+}
+#optim #info .info_right ul {
+  margin-top: 15px;
+}
+#optim #info .info_right ul li {
+  color: #9DA9B9;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+#optim #info .info_right ul li a {
+  margin-top: -24px;
+  margin-left: 200px;
+  position: relative;
+  display: inherit;
+}
+#optim #info .info_right .info_right_edu {
+  width: 300px !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#optim #info .info_sendmes {
+  width: 1070px;
+  height: 250px;
+  position: absolute;
+}
+#optim #info .info_sendmes .info_sendmes_title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #26282B;
+  text-align: center;
+  margin-top: 15px;
+}
+#optim #info .info_sendmes .info_sendmes_input textarea {
+  background: #fff;
+  border: 0;
+  width: 1020px;
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+  height: 120px;
+  resize: none;
+}
+#optim #info .info_sendmes .info_sendmes_input textarea:focus {
+  color: #9042ff;
+}
+#optim #info .info_sendmes .info_sendmes_input textarea::-moz-placeholder {
+  color: #9DA9B9;
+}
+#optim #info .info_sendmes .info_sendmes_input textarea:-ms-input-placeholder {
+  color: #9DA9B9;
+}
+#optim #info .info_sendmes .info_sendmes_input textarea::placeholder {
+  color: #9DA9B9;
+}
+#optim #info .info_sendmes .info_sendmes_button {
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  background: #9e00ff;
+  border-radius: 10px;
+  color: #fff;
+  right: 20px;
+  top: 195px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+}
+#optim #info .info_sendmes .info_sendmes_gotodualogue {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+#optim #info .info_sendmes .info_sendmes_gotodualogue a {
+  color: #9DA9B9;
+}
+#optim #info .info_sendmes .info_sendmes_gotodualogue a:hover {
+  text-decoration: underline;
+}
+#optim #info .info_sendmes .info_sendmes_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#optim #info .info_sendmes .info_sendmes_close svg {
+  fill: #9DA9B9;
+  cursor: pointer;
+}
+#optim #info .info_sendmes .info_sendmes_close svg:hover {
+  fill: #9e00ff;
+}
+#optim #photos, #optim #friends {
+  width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  margin-left: 1490px;
+  font-family: "Poppins", "Montserrat";
+  transition: 0.2s ease-in;
+  box-shadow: 3px 3px 30px rgba(171, 185, 201, 0.5), 4px 4px 30px rgba(255, 255, 255, 0.5);
+}
+#optim #photos .photos_title, #optim #photos .friends_title, #optim #friends .photos_title, #optim #friends .friends_title {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+}
+#optim #photos .photos_title_name, #optim #photos .friends_title_name, #optim #friends .photos_title_name, #optim #friends .friends_title_name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#optim #photos .photos_title_btn, #optim #photos .friends_title_btn, #optim #friends .photos_title_btn, #optim #friends .friends_title_btn {
+  color: #9DA9B9;
+  font-size: 14px;
+  right: 15px;
+  position: absolute;
+  margin-top: -60px;
+}
+#optim #photos .photos_title_btn a, #optim #photos .friends_title_btn a, #optim #friends .photos_title_btn a, #optim #friends .friends_title_btn a {
+  color: #9DA9B9;
+}
+#optim #photos .photos_title_btn a:hover, #optim #photos .friends_title_btn a:hover, #optim #friends .photos_title_btn a:hover, #optim #friends .friends_title_btn a:hover {
+  text-decoration: underline;
+}
+#optim #photos {
+  min-height: 130px;
+  margin-top: -855px;
+  max-height: 350px;
+  color: #26282B;
+}
+#optim #photos .photos_list {
+  margin-left: 20px;
+}
+#optim #photos .photos_list img {
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+#optim #friends {
+  min-height: 120px !important;
+  max-height: 380px;
+  position: relative;
+}
+#optim #friends .friendspphotos_list_banneduser {
+  margin-left: 20px;
+  font-size: 16px;
+}
+#optim #friends .friends_list_fr {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 100%;
+}
+#optim #friends .friends_list_fr .friends_list_fr_avatar {
+  margin-left: 20px;
+}
+#optim #friends .friends_list_fr .friends_list_fr_avatar a img {
+  border-radius: 10px;
+}
+#optim #friends .friends_list_fr .friends_list_fr_name {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #26282B;
+  margin-left: 85px;
+  width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#optim #friends .friends_list_fr .friends_list_fr_name a {
+  color: #26282B;
+}
+#optim #friends .friends_list_fr .friends_list_fr_name a:hover {
+  color: #9042ff;
+}
+#optim #friends .friends_list_fr .friends_list_fr_msgb {
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 300px;
+  cursor: pointer;
+}
+#optim #friends .friends_list_fr .friends_list_fr_msgb svg {
+  fill: #9DA9B9;
+}
+#optim #friends .friends_list_fr .friends_list_fr_msgb svg:hover {
+  fill: #9042ff;
+}
+#optim #friends .friends_list_nofriends {
+  margin-left: 15px;
+}
+#optim #newpost {
+  position: absolute;
+  min-height: 90px;
+  background: #fff;
+  margin-top: 25px;
+  z-index: 20;
+}
+#optim #newpost .newpost_avatar img {
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+}
+#optim #newpost .newpost_input {
+  position: absolute;
+  margin-top: -75px;
+  margin-left: 95px;
+}
+#optim #newpost .newpost_input input, #optim #newpost .newpost_input textarea {
+  width: 730px;
+  height: 90px;
+  background: #fff;
+  line-height: 90px;
+  border: 0;
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  font-size: 22px;
+  font-weight: 500;
+}
+#optim #newpost .newpost_input input::-moz-placeholder, #optim #newpost .newpost_input textarea::-moz-placeholder {
+  font-weight: 500;
+  line-height: 90px;
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  font-size: 22px;
+}
+#optim #newpost .newpost_input input:-ms-input-placeholder, #optim #newpost .newpost_input textarea:-ms-input-placeholder {
+  font-weight: 500;
+  line-height: 90px;
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  font-size: 22px;
+}
+#optim #newpost .newpost_input input::placeholder, #optim #newpost .newpost_input textarea::placeholder {
+  font-weight: 500;
+  line-height: 90px;
+  font-family: "Poppins", "Montserrat";
+  color: #9DA9B9;
+  font-size: 22px;
+}
+#optim #newpost .newpost_input textarea {
+  resize: none;
+}
+#optim #newpost .newpost_input textarea:focus {
+  color: #9042ff;
+}
+#optim #newpost .newpost_button {
+  margin-top: -50px;
+  margin-left: 870px;
+  position: absolute;
+}
+#optim #wall {
+  min-height: 120px;
+  position: absolute;
+  background: #fff;
+  margin-left: 360px;
+  top: 1090px;
+  padding-bottom: 20px;
+}
+#optim #wall.moved {
+  top: 975px;
+}
+#optim #wall .wall_post .wall_post_avatar, #optim #wall .wall_title p {
+  margin-left: 15px;
+  padding-top: 15px;
+}
+#optim #wall .wall_post .wall_post_stats ul li, #optim #wall .wall_post .wall_post_settings ul a li {
+  float: left;
+  color: #9DA9B9;
+  padding-right: 20px;
+  cursor: pointer;
+}
+#optim #wall .wall_title {
+  font-weight: 500;
+  font-size: 24px;
+  width: 100%;
+}
+#optim #wall .wall_title ul {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+#optim #wall .wall_title ul li {
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9DA9B9;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#optim #wall .wall_title ul li:last-child {
+  margin-right: 0;
+}
+#optim #wall .wall_title ul li:hover {
+  text-decoration: underline;
+}
+#optim #wall .wall_post_noposts {
+  width: 1040px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+#optim #wall .wall_post {
+  margin-top: 10px;
+  transition: 0.2s ease-in;
+}
+#optim #wall .wall_post.show {
+  -webkit-animation: show_posts 1s linear 1;
+          animation: show_posts 1s linear 1;
+}
+#optim #wall .wall_post .wall_post_avatar img {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+}
+#optim #wall .wall_post .wall_post_name {
+  position: absolute;
+  margin-top: -65px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 90px;
+}
+#optim #wall .wall_post .wall_post_date {
+  position: absolute;
+  font-weight: 500;
+  margin-left: 90px;
+  margin-top: -20px;
+  color: #9DA9B9;
+  font-size: 18px;
+}
+#optim #wall .wall_post .wall_post_settings, #optim #wall .wall_post .wall_post_stats {
+  width: 1040px;
+  height: 35px;
+  background: #F4F5F8;
+  margin-top: 25px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+#optim #wall .wall_post .wall_post_settings ul a li {
+  line-height: 35px;
+}
+#optim #wall .wall_post .wall_post_settings ul a li:first-child {
+  margin-left: 15px;
+}
+#optim #wall .wall_post .wall_post_settings ul a li:hover {
+  text-decoration: underline;
+}
+#optim #wall .wall_post .wall_post_settings p {
+  margin-left: 15px;
+  line-height: 35px;
+  color: #9DA9B9;
+}
+#optim #wall .wall_post .wall_post_stats {
+  margin-top: 10px;
+}
+#optim #wall .wall_post .wall_post_stats ul li:first-child {
+  margin-left: 15px;
+}
+#optim #wall .wall_post .wall_post_stats ul li svg {
+  margin-top: 10px;
+}
+#optim #wall .wall_post .wall_post_stats ul li span {
+  display: block;
+  margin-top: -22.5px;
+  margin-left: 30px;
+}
+#optim #wall .wall_post .wall_post_text {
+  margin-left: 17.5px;
+  font-weight: 400;
+  margin-top: 10px;
+  width: 1040px;
+}
+#optim #wall .wall_post .wall_post_text img {
+  border-radius: 10px;
+}
+#optim #wall .wall_post .wall_post_text_edit_textarea {
+  resize: vertical;
+  min-height: 100px;
+  height: auto;
+  width: 1040px;
+  border-radius: 10px;
+  background: #F4F5F8;
+  border: 0;
+  padding-left: 10px;
+  font-weight: 500;
+  color: #9DA9B9;
+  font-size: 16px;
+  font-family: "Poppins", "Montserrat";
+}
+#optim #wall .wall_post .wall_post_text_edit_textarea:focus {
+  color: #9042ff;
+}
+#optim #wall .wall_post .post_edit_form_all input[type=submit], #optim #wall .wall_post .post_edit_form_all button {
+  margin-top: 10px;
+  width: 140px !important;
+  height: 35px !important;
+}
+#optim #wall .wall_post .post_edit_form_all button {
+  border-radius: 10px;
+  color: #9e00ff;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  font-family: "Poppins", "Montserrat";
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  margin-left: 5px;
+}
+#optim #wall .wall_post .post_edit_form_all button:hover {
+  background: #F4F5F8;
+}
+#optim .photos_list_nophoto, #optim .friends_list_nofriends, #optim .wall_post_noposts, #optim .friendspphotos_list_banneduser {
+  width: 310px;
+  height: 40px;
+  background: #F4F5F8;
+  color: #9DA9B9;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+#optim .newpost_button button, #optim .post_edit_form_all input[type=submit] {
+  background: #9042ff;
+  border: 0;
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#optim .newpost_button button:active, #optim .post_edit_form_all input[type=submit]:active {
+  padding-top: 2px;
+}
+#optim .wall_post_stats_like li svg, #optim .photo_info_like li svg {
+  fill: #9DA9B9;
+}
+#optim .wall_post_stats_like.liked li svg, #optim .photo_info_like li svg {
+  fill: #9042ff;
+}
+#optim .liked li span {
+  color: #9042ff;
+}
+#optim .liked li svg {
+  fill: #9042ff !important;
+}
+
+#modal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent !important;
+}
+
+#password {
+  width: 400px;
+  height: 200px;
+  z-index: 1000;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+#password p {
+  padding-top: 25px;
+  font-weight: 500;
+  color: #26282B;
+}
+#password .password_input {
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+  background: #F4F5F8;
+  color: #9DA9B9;
+  border: 0;
+  font-family: "Poppins";
+  padding-left: 15px;
+  margin-top: 25px;
+}
+#password .password_button {
+  margin-top: 10px;
+  cursor: pointer;
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+  background: #007eff;
+  color: #fff;
+  font-family: "Poppins";
+  border: 0;
+}
+
+#header_cover {
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 2000;
+}
+
+#log_cover {
+  background: #9042ff;
+  color: #fff;
+  width: 1070px;
+  position: relative;
+  bottom: 0;
+  font-family: "Poppins", "Montserrat";
+  z-index: 100000;
+  margin: 0 auto !important;
+  box-shadow: none !important;
+}
+#log_cover .log_cover_content {
+  height: 80px;
+  bottom: 0;
+  position: fixed;
+  width: 1070px;
+}
+#log_cover .log_cover_content .log_cover_text {
+  margin-top: 10px;
+}
+#log_cover .log_cover_content .log_cover_text b {
+  font-weight: 600;
+  font-size: 24px;
+}
+#log_cover .log_cover_content .log_cover_buttons {
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 650px;
+}
+#log_cover .log_cover_content .log_cover_buttons a:first-child button {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+#log_cover .log_cover_content .log_cover_buttons a:first-child button:hover {
+  border-color: #e1e1e1;
+  color: #e1e1e1;
+}
+#log_cover .log_cover_content .log_cover_buttons a:nth-child(2) button {
+  background: #fff;
+  color: #9042ff;
+  border: none;
+}
+#log_cover .log_cover_content .log_cover_buttons a:nth-child(2) button:hover {
+  background: #0EC645;
+  color: #fff;
+}
+#log_cover .log_cover_content .log_cover_buttons a button {
+  text-transform: uppercase;
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  font-family: "Poppins", "Montserrat";
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+
+#log_cover_1 {
+  background: #9042ff;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  font-family: "Poppins", "Montserrat";
+  z-index: 100000;
+}
+
+/*adaptiveness*/
+@media (min-width: 1024px) and (max-width: 1900px) {
+  #optim {
+    width: calc(65vw + 300px);
+  }
+  #optim .header_menu {
+    margin-left: 65.6vw !important;
+  }
+  #optim #mainstripe {
+    height: 40px !important;
+  }
+  #optim #mainstripe .mainstripe_photos_backb {
+    margin-left: 43vw;
+  }
+  #optim #mainstripe .mainstripe_name p, #optim #mainstripe .mainstripe_photos_name p {
+    font-size: 20px !important;
+    line-height: 40px !important;
+  }
+  #optim #photos, #optim #friends {
+    margin-left: 360px;
+  }
+  #optim #photo {
+    height: 46vh;
+  }
+  #optim #photo .photo_show {
+    width: 42vh;
+    height: 42vh;
+  }
+  #optim #photo .photo_show img {
+    min-width: 42vh;
+  }
+  #optim #photo .photo_comments {
+    height: 27vh;
+  }
+  #optim #photo .photo_comments .photo_comments_comm {
+    width: calc(100% - 30px);
+  }
+  #optim #photo .photo_info {
+    font-size: 12px;
+  }
+  #optim #photo .photo_settings {
+    margin-top: 40vh;
+  }
+  #optim #photo .photo_info, #optim #photo .photo_settings, #optim #photo .photo_comments, #optim #photo .photo_banned_info_plate1, #optim #photo .photo_banned_info_plate2 {
+    margin-left: calc(42vh + 40px);
+    width: calc(100% - 42vh - 365px);
+  }
+  #optim #wall {
+    position: relative;
+    margin-top: 25px !important;
+    top: auto !important;
+  }
+  #optim #wall .wall_post_text_edit_textarea {
+    width: calc(100% - 5px) !important;
+  }
+  #optim #friends {
+    margin-top: 25px !important;
+  }
+  #optim #friends .friends_list_fr_msgb {
+    right: 15px;
+  }
+  #optim #photos {
+    margin-top: 140px;
+  }
+  #optim #photos .photos_title_btn {
+    right: -45px;
+  }
+  #optim .info_right {
+    margin-left: 23vw !important;
+    width: 40.5vw !important;
+  }
+  #optim .offset {
+    margin-top: 25px !important;
+  }
+  #optim .info_left_exp, #optim .info_left_editb button, #optim .info_edit_email_status, #optim .info_left_msg, #optim .info_left_friendstgs, #optim .info_left_addfr, #optim .info_left_hesub, #optim .info_left_usub, #optim .experience_line {
+    width: 20vw !important;
+  }
+  #optim .newpost_input input {
+    width: 38vw;
+  }
+  #optim #percent1, #optim #percent, #optim #percent3, #optim #percent2, #optim #percent_special {
+    max-width: 20vw !important;
+  }
+  #optim .newpost_button {
+    right: 25px;
+  }
+  #optim .info_sendmes_input textarea, #optim .e_edit_status, #optim .settings_status {
+    width: calc(65vw - 50px) !important;
+  }
+}

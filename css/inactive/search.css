@@ -1,0 +1,64 @@
+@media (max-width: 8000px) {
+    #results{
+        margin-left: 35%;
+        width: 900px;
+        background: #fff;
+        margin-top: 80px;
+    }
+    .results_itemsearch input{
+        width: 900px;
+    }
+}
+@media (max-width: 1990px) {
+    #results{
+        margin-left: 24.5%;
+        width: 600px;
+    }
+    .results_itemsearch input{
+        width: 600px;
+    }
+}
+@media (max-width: 1300px) {
+    #results{
+        margin-left: 300px;
+    }
+}
+.results_title{
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+.results_itemsearch input{
+    height: 30px;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+    background: #fff url(/img/search_icon2.png) no-repeat 0 5px;
+    border-left: 10px solid #fff;
+}
+.results_people,.results_music{
+    margin: 5px 0;
+    padding-left: 30px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.results_people font,.results_music font{
+    color: #42aaff;
+    font-size: 12px;
+}
+.results_people a,.results_music a{
+    color: gray;
+    font-size: 12px;
+    position: relative;
+}
+.results_people a:hover,.results_music a:hover{
+    text-decoration: underline;
+}
+.results_people a{
+    margin-left: 300px;
+}
+.results_music a{
+    margin-left: 284px;
+}

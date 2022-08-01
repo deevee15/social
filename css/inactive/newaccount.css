@@ -1,0 +1,351 @@
+body{
+    /*font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style: none;
+}
+.header_account{
+    font-weight: normal;
+    font-family: Tahoma;
+    cursor: pointer;
+    height: 41px;
+    width: 110px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: -33px;
+}
+.header_account:hover{
+    background: #2a9efc;
+}
+.header_enter{
+    margin-right: 10px;
+}
+.settings{
+    border-radius: 1px;
+}
+.notlogined_text{
+    text-align: center;
+    margin-top: 10px;
+}
+.notlogined_text a{
+    color: #007eff;
+}
+.notlogined_text a:hover{
+    text-decoration: underline;
+}
+#points{
+    width: 861px;
+    height: 50px;
+    background: #42aaff;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+.points_list li{
+    line-height: 50px;
+    float: left;
+    margin-left: 30px;
+    cursor: pointer;
+}
+#wall{
+    width: 861px;
+    height: auto;
+    background: #fff;
+    position: absolute;
+}
+.wall_title,.photos_title,.friends_title{
+    background: #42aaff;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 40px;
+    line-height: 35px;
+    height: 35px;
+}
+.wall_show{
+    overflow-y: auto;
+    padding: 10px;
+}
+.wall_write{
+    height: 132px;
+    width: 861px;
+    position: absolute;
+    background: #fff;
+}
+.wall_show_other{
+    margin-top: -50px;
+    margin-left: 60px;
+}
+.wall_show_user a{
+    color: #42aaff;
+}
+.wall_show_user a:hover{
+    text-decoration: underline;
+}
+.wall_show_date{
+    font-size: 10px;
+    color: #d1d1d1;
+}
+.wall_buttons{
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    margin-left: 55px;
+}
+.wall_buttons li{
+    float: left;
+    padding-left: 5px;
+}
+.w_b_like,.w_b_comment,.w_b_repost{
+    color: #42aaff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.w_b_like:hover,.w_b_comment:hover,.w_b_repost:hover{
+    background: #eae5e5;
+}
+.w_b_like p,.w_b_comment p{
+    margin-left: 15px;
+}
+.w_b_like_img{
+    margin-top: 2px;
+    position: absolute;
+    background: url(/img/like.png);
+    width: 12px;
+    height: 10px;
+}
+.w_b_comment_img{
+    margin-top: 2px;
+    position: absolute;
+    background: url(/img/comment.png);
+    width: 12px;
+    height: 10px;
+}
+.w_b_repost_img{
+    margin-top: 2px;
+    position: absolute;
+    background: url(/img/repost.png);
+    width: 12px;
+    height: 10px;
+}
+#photos{
+    width: 861px;
+    background: #fff;
+    position: absolute;
+}
+.photos_show,.friends_show{
+    padding: 10px;
+}
+.photos_show img{
+    margin-left: 10px;
+}
+#show{
+    width: 861px;
+    background: #fff;
+    min-height: 200px;
+    position: relative;
+}
+.show_file img{
+    max-height: 600px;
+    max-width: 801px;
+    margin: 20px 0px;
+}
+.show_close{
+    position: absolute;
+    margin-left: 837px;
+    margin-top: 5px;
+    cursor: pointer;
+    background: url(/img/closeit.png);
+    width: 18px;height: 18px;
+}
+.show_close:hover{
+    background: url(/img/closeit1.png);
+    width: 18px;height: 18px;  
+}
+.profile_status{
+    text-align: center;
+}
+#friends{
+    width: 861px;
+    background: #fff;
+    height: auto;
+    position: absolute;
+}
+.friends_show{
+    float: left;
+    width: 100px;
+    height: 120px;
+    display: block;
+    text-align: center;
+}
+.friends_show_photo a img{
+    margin: 5px;
+    border-radius: 50px;
+}
+.friends_show_names a{
+    color: #42aaff;
+    white-space: nowrap;
+}
+.friends_show_names a:hover{
+    text-decoration: underline;
+}
+.profile_online{
+    color: #d1d1d1;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+.photos_show_img:hover{
+    width: 87px;height: 87px;
+    cursor: pointer;
+    border: 2px solid #42aaff;
+}
+.blocked_button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #007eff;
+}
+.avatar_div{
+    max-height: 300px;
+    max-width: 550px;
+}
+.stripeof_exp{
+    width: 100%;
+    height: 30px;
+    background: #ff0000;
+    color: #fff;
+}
+.show_maindiv_comments{
+    width: 861px;
+    max-height: 350px;
+    overflow: auto;
+}
+.show_comments{
+    padding: 10px;
+    background: #42aaff;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+}
+.show_comments:last-child{
+    border: 0;
+}
+.show_comments:first-child{
+    border-top: 1px solid #fff;
+}
+.show_comments_avatar img{
+    border-radius: 25px;
+}
+.show_comments_st{
+    min-height: 50px;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+.show_comments_name a{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+.show_comments_text{
+    font-size: 16px;
+}
+.show_comments_date{
+    font-size: 12px;
+    cursor: pointer;
+    color: #d1d1d1;
+}
+.show_comments_date:hover,.show_comments_name:hover{
+    text-decoration: underline;
+}
+.first_comment{
+    padding: 10px 0;
+    background: #42aaff;
+    color: #fff;
+}
+.first_comment_button{cursor: pointer;}
+.first_comment_button:hover{
+    color: #007eff;
+}
+.form_comment{
+    width: 841px;
+    height: auto;
+}
+.comment_avatar{
+    border-radius: 25px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.comment_text{
+    margin-left: 10px;
+    width: 841px;
+    min-height: 100px;
+    padding-top: 25px;
+    padding-left: 65px;
+    font-size: 16px;
+    border: 1px solid #007eff;
+    margin-bottom: 10px;
+    resize: none;
+}
+.comment_submit{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    margin-top: -31px;
+    margin-left: 750px;
+    background: #42aaff;
+    border: 1px solid #42aaff;
+    color: #fff;
+}
+input[name=comment_submit]:active{
+    padding-top: 1px;
+}
+.profile_information_button{
+    position: relative;
+    width: 120px;
+    height: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 370.5px;
+    align-items: center;
+    justify-content: center;
+}
+.profile_information_button_div{
+    background: transparent;
+    width: 10px;
+    height: 2px;
+    transition: 0.2s;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 50%;
+}
+.profile_information_button_div:after{
+    content: '';
+    width: 10px;
+    height: 2px;
+    transition: 0.2s;
+    position: absolute;
+    top: -10px;
+    left: 6px;
+    display: block;
+    background: #fff;
+    transform: rotate(135deg);
+}
+.profile_information_button_div:before{
+    content: '';
+    width: 10px;
+    height: 2px;
+    transition: 0.2s;
+    position: absolute;
+    top: -10px;
+    display: block;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.profile_information_button_div.active:after{transform: rotate(215deg);}
+.profile_information_button_div.active:before{transform: rotate(135deg);}
