@@ -1,6 +1,16 @@
-# social# social
-Latest version of selfmade social network named "Social".
-It contains:
+# Social -  Latest version of selfmade social network
+Here used: 
++ **HTML5**
++ **CSS3, SCSS**
++ **JavaScript, jQuery Framework**
++ **PHP7+**
+#### JavaScript:
++ Native JS code matches ECMAScript 2022 standards.
++ Realized XHR/Ajax-requests
+#### PHP:
++ Everywhere used cookies for holding user data
++ Via MySQL saved users information
+#### What realized here:
 - Registrating and singing in existing account
 - Friends system (account/friends.php)
 - Messages system with autoupdating of dialogue (account/messages.php)
@@ -9,8 +19,5 @@ It contains:
 - Possibility to upload your own avatars (for it uses directory in user/avatars/*userid*)
 - Dark mode
 - Adaptive for any screens design
-- CSS animation
 - SVG logo and all site icons
-- mobile version\
-Some style-files rewrited via SCSS\
-Here used not new PHP 7, MySQLi. As much as possible used XHR/jQuery Ajax for in-page update.
+- mobile version
